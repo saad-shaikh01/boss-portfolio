@@ -37,7 +37,9 @@ export function PrimaryText(props) {
 }
 export function SecondaryText(props) {
   return (
-    <div className={`text-[18px] text-gray-400 ${props.style}`}>
+    <div
+      className={`text-[22px] ${props.style}`}
+    >
       {props.title}
     </div>
   );
