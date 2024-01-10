@@ -1,5 +1,10 @@
 import React from 'react';
 import videoSrc from '../videos/Header-video.mp4';
+import profile from '../images/profile2.jpg';
+import Button from '../components/Button';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faThumbsUp } from '@fortawesome/free-solid-svg-icons';
+
 
 function Hero() {
   return (
@@ -12,10 +17,41 @@ function Hero() {
       </div>
 
       {/* Content */}
-      <div className='absolute inset-0 flex items-center justify-center'>
+      <div className='absolute inset-0 flex items-center justify-center bg-blue-500 bg-opacity-90'>
         <div className='text-white text-center'>
-          <h1 className='text-4xl font-bold mb-4'>Your Title Here</h1>
-          <p className='text-lg'>Your content goes here.</p>
+
+          <img src={profile} className='w-36  h-36 rounded-full border border-4 border-[white]'/>
+          <Button text="About Me" />
+
+
+
+          <FontAwesomeIcon icon={faThumbsUp} className='text-[black]'/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         </div>
       </div>
     </div>
