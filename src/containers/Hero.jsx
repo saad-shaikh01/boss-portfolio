@@ -3,7 +3,6 @@ import videoSrc from '../assets/videos/Header-video.mp4';
 import profile from '../assets/images/profile2.jpg';
 import Button from '../components/Button';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 import { PrimaryHeading } from '../components/Text';
 import { Icons } from '../assets/icons/icons';
 
