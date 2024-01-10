@@ -1,6 +1,6 @@
 import React from 'react';
-import videoSrc from '../videos/Header-video.mp4';
-import profile from '../images/profile2.jpg';
+import videoSrc from '../assets/videos/Header-video.mp4';
+import profile from '../assets/images/profile2.jpg';
 import Button from '../components/Button';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faThumbsUp } from '@fortawesome/free-solid-svg-icons';
