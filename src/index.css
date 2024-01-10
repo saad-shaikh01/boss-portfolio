@@ -19,3 +19,10 @@ code {
 .container {
   padding: 0 10% ;
 }
+.Hire-main{
+  background-image: url('./assets/images/hire-bg.avif');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
