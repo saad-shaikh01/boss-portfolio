@@ -7,9 +7,39 @@ module.exports = {
     extend: {
       fontFamily: {
         'space-grotesk': ['Space Grotesk', 'sans-serif'],
-        // You can add other font families here as well
+      },
+      colors: {
+        dark: {
+          primary: '#1a202c', 
+          secondary: '#2d3748', 
+          white: '#fffff',
+          black: 'black'
+        },
+        light: {
+          primary: '#ffffff',
+          secondary: '#f7fafc', 
+        },
+      
       },
     },
   },
   plugins: [],
 }
+
+
+//  /** @type {import('tailwindcss').Config} */
+//  module.exports = {
+//   content: [
+//     "./src/**/*.{js,jsx,ts,tsx}",
+//   ],
+//   theme: {
+//     extend: {
+//       fontFamily: {
+//         'space-grotesk': ['Space Grotesk', 'sans-serif'],
+//         // You can add other font families here as well
+//       },
+      
+//     },
+//   },
+//   plugins: [],
+// }
