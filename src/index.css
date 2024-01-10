@@ -19,3 +19,60 @@ code {
 .container {
   padding: 0 10% ;
 }
+
+
+
+/* .slick-dots {
+  bottom: 20px;
+}
+
+.slick-dots li {
+  margin: 0;
+}
+
+.custom-dot {
+  display: inline-block;
+  margin-right: 10px; 
+}
+
+.custom-dot span {
+  width: 10px; 
+  height: 10px;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 2px solid #fff; 
+  transition: all 0.3s ease;
+}
+.slick-dots li {
+  display: flex;
+  justify-content: ;
+  align-items: center;
+  align-content: center;
+  padding: 10px;
+  margin: 30px !;
+  border-radius: 50%; 
+  padding: 10px !important;
+  border: 1px solid rebeccapurple;
+}
+.slick-dots li div{
+  margin: 10px ;
+  border: 1px solid black ;
+  background-color: red;
+}
+*/
+
+.slick-dots li.slick-active div {
+  background-color: #fdd835; 
+  border-color: #fdd835; 
+ 
+} 
+
+.slick-prev,
+.slick-next {
+  display: none;
+}
+
+.slick-slider:hover .slick-prev,
+.slick-slider:hover .slick-next {
+  display: block !important;
+}
