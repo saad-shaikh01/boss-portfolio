@@ -4,8 +4,8 @@ import Service from './containers/Service';
 function App() {
   return (
     <div>
-      {/* <Hero/> */}
-      <Service/>
+      <Hero/>
+      {/* <Service/> */}
     </div>
   );
 }

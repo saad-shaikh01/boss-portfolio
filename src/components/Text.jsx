@@ -3,7 +3,7 @@ import React from "react";
 export function PrimaryHeading(props) {
   return (
     <div
-      className={`text-[45px] sm:text-[55px] lg:text-[80px] leading-[1] text-[#ffffff] font-space-grotesk font-bold mb-4 ${props.style}`}
+      className={`text-[45px] sm:text-[55px] lg:text-4xl w-1/2 leading-[1] text-dark-black  font-space-grotesk font-bold mb-4  ${props.style}`}
     >
       {props.title}
     </div>
@@ -29,6 +29,15 @@ export function SecondaryHeading(props) {
   );
 }
 export function PrimaryText(props) {
+  return (
+    <div
+      className={`text-[18px] text-gray-400 ${props.style}`}
+    >
+      {props.title}
+    </div>
+  );
+};
+export function SecondaryText(props) {
   return (
     <div
       className={`text-[18px] text-gray-400 ${props.style}`}
