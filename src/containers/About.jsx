@@ -10,6 +10,7 @@ function About() {
 
 
                 <div className='About-content flex pt-10 justify-around  items-center'>
+                    <h1></h1>
 
                     <div className='w-[70%]'>
                         <h1 className='text-4xl pb-2'>Hi, I'm <span className='font-bold'>Callum Smith</span></h1>
