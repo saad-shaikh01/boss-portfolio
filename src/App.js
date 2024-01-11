@@ -7,6 +7,8 @@ import Skills from "./containers/Skills";
 import Hire from "./containers/Hire";
 import Faq from "./containers/Faq";
 import TestimonialSlider from "./containers/TestimonialSlider";
+import Contact from "./containers/Contact";
+import Footer from "./containers/Footer";
 import Works from "./containers/Works";
 import Navbar from "./containers/Navbar";
 
@@ -17,11 +19,13 @@ function App() {
       <Navbar />
       <About />
       <Skills />
-      <Hire />
-      <Faq />
-      <Service />
+       <Hire />
+    <Faq />
+     <Service />
       <Resume />
-      <TestimonialSlider /> 
+      <TestimonialSlider />  
+      <Contact/>
+      <Footer/>
       <Works />
     </div>
   );

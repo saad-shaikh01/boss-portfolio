@@ -19,28 +19,35 @@ function Skills() {
         <SecondaryHeading style={"text-xl font-bold text-gray-900"} title={title} />
         <SecondaryHeading style={"text-xl font-bold text-gray-900"} title={`${value}%`} />
       </div>
-      <progress value={value} max="100" className="w-full h-2 bg-red-400"></progress>
+      <progress
+      
+        value={value}
+        max="100"
+        className="w-full h-2"
+        style={{ borderRadius: '4px' }} // Optional: Add border-radius for rounded corners
+      ></progress>
+      <style jsx>{`
+        progress::-webkit-progress-value {
+          background-color:  #E3EEEF;
+          border-radius: 999px;}`}
+        </style>
     </div>
   );
 
   return (
     <div className='container my-20 mx-auto'>
-      <PrimaryHeading style={'mx-auto w-[100%]'} title={'My Skills'} />
+      <PrimaryHeading style={'mx-auto sm:w-[100%] w-[100%]'} title={'My Skills'} />
 
       {/* Progress Bar Starts here */}
-
-      <div className='grid grid-cols-2 gap-8 pt-8'>
+      <div className='grid sm:grid-cols-2 gap-8 pt-8'>
         {skillsData.map((skill, index) => (
           <SkillProgress key={index} title={skill.title} value={skill.value} />
         ))}
       </div>
 
-      {/* Add more progress bars for each skill as needed */}
-
-<div className=' flex justify-center mt-8'>
-      <Button text="Download CV" style="flex justify-center" />
+      <div className='flex justify-center mt-8'>
+        <Button text="Download CV" style="flex justify-center" />
       </div>
-
     </div>
   );
 }

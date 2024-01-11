@@ -10,12 +10,12 @@ const FAQItem = ({ index, question, answer, isOpen, onToggle }) => {
   };
 
   return (
-    <div className={`faq-item ${isOpen ? 'open' : ''}`} data-aos={isOpen ? 'fade-up' : ''}>
-      <h3 className="faq-question text-primary">
+    <div className={`faq-item my-5 ${isOpen ? 'open' : ''}`} data-aos={isOpen ? 'fade-up' : ''}>
+      <h3 className="faq-question text-primary font-bold text-gray-600 text-xl">
       <FontAwesomeIcon className="icon cursor-pointer mr-4" icon={isOpen ? faCaretUp : faCaretDown}  onClick={toggleAnswerVisibility}/>
         {question} 
       </h3>
-      {isOpen && <p className="faq-answer pl-6" data-aos="fade-up">{answer}</p>}
+      {isOpen && <p className="faq-answer pl-6 text-gray-400" data-aos="fade-up">{answer}</p>}
     </div>
   );
 };
@@ -28,11 +28,11 @@ const Faq = () => {
   };
 
   return (
-    <div className='container my-20 flex items-center justify-between'>
+    <div className='container my-10 md:my-20 mx-auto md:flex-nowrap flex-wrap gap-12 flex items-center justify-between'>
 
 
-<div>
-<PrimaryHeading style={"w-[100%]"}  title={"Have any questions?"} />
+<div className='lg:w-[60%] w-[100%]'>
+<PrimaryHeading style={"w-[100%] sm:w-[100%] pb-10"}  title={"Have any questions?"} />
 
       <FAQItem
         index={0}
@@ -76,9 +76,8 @@ const Faq = () => {
       {/* Add more FAQ items as needed */}
 </div>
 
-
-<div>
-    <img src={faqimg}/>
+<div className='flex justify-center mx-auto'>
+    <img src={faqimg} className='mx-auto' />
 </div>
 
     </div>
