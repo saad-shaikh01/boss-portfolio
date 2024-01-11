@@ -3,7 +3,7 @@ import videoSrc from '../assets/videos/Header-video.mp4';
 import profile from '../assets/images/profile2.jpg';
 import Button from '../components/Button';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { PrimaryHeading } from '../components/Text';
+import { PrimaryHeading , SecondaryText} from '../components/Text';
 import { Icons } from '../assets/icons/icons';
 
 function Hero() {
@@ -27,12 +27,14 @@ function Hero() {
 
           <img src={profile} className='w-36 h-36 rounded-full border border-4 border-[white] mx-auto' />
           {/* <h1 className='text-4xl font-bold w-2/3 mx-auto py-8'>HELLO! I'M CALLUM SMITH - GRAPHIC DESIGNER, ILLUSTRATOR & ART DIRECTOR.</h1> */}
-          <PrimaryHeading style={"mx-auto "}  title={"HELLO! I'M CALLUM SMITH - GRAPHIC DESIGNER, ILLUSTRATOR & ART DIRECTOR."} />
-           <p className='text-2xl pb-8'>based in Los Angeles, USA.</p>
+          <PrimaryHeading style={"mx-auto pt-4 sm:w-[100%] lg:w-[50%] sm:text-[22px]"}  title={"HELLO! I'M CALLUM SMITH - GRAPHIC DESIGNER, ILLUSTRATOR & ART DIRECTOR."} />
+           <SecondaryText style={""} title={"based in Los Angeles, USA."} />
           <Button text="About Me" />
 
           <div id="arrowIcon" className='bottom-8 left-1/2 transform -translate-x-1/2 opacity-0 transition-opacity'>
-            <FontAwesomeIcon icon={Icons.DownArrow} className='text-black text-2xl mt-8' />
+    
+     <a href="#Know"> <FontAwesomeIcon icon={Icons.DownArrow} className='cursor-pointer text-black text-2xl mt-8' /> </a>
+
           </div>
 
         </div>

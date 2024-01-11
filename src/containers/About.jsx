@@ -3,19 +3,17 @@ import { PrimaryHeading, SecondaryText, PrimaryText , SecondaryHeading , } from 
 
 function About() {
     return (
-        <div className="container min-h-[100vh]  mx-auto flex items-center">
+        <div className="container mx-auto my-12 md:my-20" id="Know">
             <div>
                 <PrimaryHeading
-                    style={"mx-auto text-center w-[100%]"}
+                    style={"mx-auto sm:w-[100%] text-start lg:text-center w-[100%]"}
                     title={"Know Me More"}
                 />
 
+                <div className="About-content flex-wrap lg:flex-nowrap gap-10 flex pt-10 justify-around  items-center">
 
-
-                <div className="About-content gap-10 flex pt-10 justify-around  items-center">
-
-                    <div className="w-[70%]">
-                        <h1 className="text-4xl pb-2">
+                    <div className="w-[100%] lg:w-[70%]">
+                        <h1 className="text-2xl sm:text-4xl pb-2">
                             Hi, I'm <span className="font-bold border-b border-b-4  border-dark-primary">Callum Smith</span>
                         </h1>
                         <SecondaryText
@@ -26,7 +24,7 @@ function About() {
                         />
                     </div>
 
-                    <div className="w-[40%] text-center">
+                    <div className="w-[100%] lg:w-[40%] text-center">
                         <div className="bg-dark-primary flex items-center justify-center w-28 h-28 rounded-full mx-auto">
                             <p className=" w-[150px] text-[120px] font-bold">22</p>
                         </div>
@@ -38,31 +36,26 @@ function About() {
                 </div>
 
 
-                <div className="About-content2 pt-20 flex flex-wrap justify-between">
+                <div className="About-content2 pt-20 flex gap-4 flex-wrap justify-between">
 
                     <div>
                         <PrimaryText style={"font-semibold"} title={"Name:"} />
-                        <SecondaryHeading style={"text-xl font-extrabold text-gray-900"} title={"Callum Smith"} />
+                        <SecondaryHeading style={"text-xl font-extrabold sm:text-gray-900"} title={"Callum Smith"} />
                     </div>
                     <div>
                         <PrimaryText style={"font-semibold"} title={"Email:"} />
-                        <SecondaryHeading style={"text-xl font-extrabold text-gray-900"} title={"chat@callum.com"} />
+                        <SecondaryHeading style={"text-xl font-extrabold sm:text-gray-900"} title={"chat@callum.com"} />
                     </div>
                     <div>
                         <PrimaryText style={"font-semibold"} title={"Date Of Birth"} />
-                        <SecondaryHeading style={"text-xl font-extrabold text-gray-900"} title={"11, November 1987"} />
+                        <SecondaryHeading style={"text-xl font-extrabold sm:text-gray-900"} title={"11, November 1987"} />
                     </div>
                     <div>
                         <PrimaryText style={"font-semibold"} title={"From:"} />
-                        <SecondaryHeading style={"text-xl font-extrabold text-gray-900"} title={"Los Angeles, USA."} />
+                        <SecondaryHeading style={"text-xl font-extrabold sm:text-gray-900"} title={"Los Angeles, USA."} />
                     </div>
 
                 </div>
-
-
-
-
-
 
 
             </div>

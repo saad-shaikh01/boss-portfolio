@@ -10,6 +10,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -20,14 +23,12 @@ code {
   padding: 0 10% ;
 }
 .Hire-main{
-  background-image: url('./assets/images/hire-bg.avif');
+  background-image: url('./assets/images/Hire-bg.png');
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-
-
 
 /* .slick-dots {
   bottom: 20px;
@@ -71,7 +72,6 @@ code {
 .slick-dots li.slick-active div {
   background-color: #fdd835; 
   border-color: #fdd835; 
- 
 } 
 
 .slick-prev,

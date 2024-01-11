@@ -7,17 +7,21 @@ import Skills from "./containers/Skills";
 import Hire from "./containers/Hire";
 import Faq from "./containers/Faq";
 import TestimonialSlider from "./containers/TestimonialSlider";
+import Contact from "./containers/Contact";
+import Footer from "./containers/Footer";
 function App() {
   return (
     <div>
       <Hero />
       <About />
       <Skills />
-      <Hire />
-      <Faq />
-      <Service />
+       <Hire />
+    <Faq />
+     <Service />
       <Resume />
-      <TestimonialSlider />
+      <TestimonialSlider /> 
+      <Contact/>
+      <Footer/>
     </div>
   );
 }
