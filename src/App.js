@@ -17,10 +17,10 @@ function App() {
     <div>
       <Hero />
       <Navbar />
-      <About />
-      <Service />
       <Resume />
       <Skills />
+      <Service />
+      <About />
       <Works />
       <Hire />
       <Faq />
