@@ -11,7 +11,7 @@ module.exports = {
       colors: {
         dark: {
           // primary: '#ffff', 
-          primary: '#000000', 
+          primary: 'gainsboro', 
           secondary: '#2d3748', 
           regular: '#ffff',
           // black: '#000000'

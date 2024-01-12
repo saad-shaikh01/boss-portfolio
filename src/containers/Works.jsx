@@ -47,12 +47,12 @@ export default function Works() {
   const [currentCategory, setCurrentCategory] = useState("All");
 
   return (
-    <div className="bg-gray-200 py-[4rem]">
-      <div className="container">
+    <div className="bg-gray-200 py-2 lg:py-[4rem]">
+      <div className="container mx-auto">
         <div>
           <PrimaryHeading
             title={"Some of my most recent projects"}
-            style={"w-full text-center mb-8 lg:mb-[4rem] mt-8"}
+            style={"w-full sm:w-[100%] text-center mb-8 lg:mb-[4rem] mt-8"}
           />
         </div>
 
@@ -60,7 +60,7 @@ export default function Works() {
           {categories.map((category, index) => (
             <button
               key={index}
-              className={`mr-4 px-3 pb-1 font-semibold text-gray-400 hover:text-black hover:border-b-2 hover:border-dark-primary ${
+              className={`mr-4 w-[50%] mx-auto md:w-[auto] px-3 pb-1 font-semibold text-gray-400 hover:text-black hover:border-b-2 hover:border-dark-primary ${
                 currentCategory === category
                   ? "text-[#000000] border-b-2 border-dark-primary "
                   : ""
@@ -72,7 +72,7 @@ export default function Works() {
           ))}
         </nav>
 
-        <div className="flex  justify-center flex-wrap p-4  ">
+        <div className="md:flex justify-center flex-wrap p-4  ">
           {projects
             .filter(
               (project) =>
@@ -80,7 +80,7 @@ export default function Works() {
                 project.category === currentCategory
             )
             .map((project, index) => (
-              <div key={index} className="w-[30%] m-4 relative cursor-pointer">
+              <div key={index} className="w-[100%] md:w-[30%] my-2 sm:m-4 relative cursor-pointer">
                 <img
                   src={project.image}
                   alt={project.title}

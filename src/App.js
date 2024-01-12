@@ -15,18 +15,18 @@ import Navbar from "./containers/Navbar";
 function App() {
   return (
     <div>
-      {/* <Hero /> */}
+      <Hero />
       <Navbar />
       <About />
-      <Skills />
-       <Hire />
-    <Faq />
-     <Service />
+      <Service />
       <Resume />
-      <TestimonialSlider />  
-      <Contact/>
-      <Footer/>
+      <Skills />
       <Works />
+      <Hire />
+      <Faq />
+      <TestimonialSlider />
+      <Contact />
+      <Footer />
     </div>
   );
 }

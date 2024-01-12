@@ -97,28 +97,32 @@ const servicesData = [
 
 const Service = () => {
   return (
+    <div className="bg-gray-100 py-10 md:py-20"> 
     <div className="container mx-auto py-8">
       <PrimaryHeading
         title={"How I can help your next project"}
-        style={"w-full text-center mx-auto mb-8 mt-8"}
+        style={"w-full sm:w-[100%] text-center mx-auto mb-8 lg:mt-8"}
       />
 
-      <div className="flex flex-wrap -mx-4">
-        {servicesData.map((service, index) => (
-          <div
-            key={index}
-            className="w-full sm:w-1/2 md:w-1/3 px-4 mt-2rem lg:mt-[4rem]"
-          >
-            <div className=" mb-4  bg-white p-6 text-center  rounded-lg shadow-md">
-              <div className=" text-5xl mb-4 text-center text-dark-primary ">
-                <FontAwesomeIcon icon={service.icon} />
-              </div>
-              <SubHeading title={service.title} />
-              <PrimaryText title={service.description} />
-            </div>
-          </div>
-        ))}
+<div className="flex flex-wrap -mx-4" style={{ display: 'flex', alignItems: 'stretch' }}>
+  {servicesData.map((service, index) => (
+    <div
+      key={index}
+      className="w-full sm:w-1/2 lg:w-1/3 px-4 mt-2rem lg:mt-[4rem]"
+      style={{ display: 'flex', flexDirection: 'column' }}
+    >
+      <div className="mb-4 bg-white p-6 text-center rounded-lg shadow-md flex-grow">
+        <div className="text-5xl mb-4 text-center text-dark-primary">
+          <FontAwesomeIcon icon={service.icon} />
+        </div>
+        <SubHeading title={service.title} />
+        <PrimaryText title={service.description} />
       </div>
+    </div>
+  ))}
+</div>
+
+    </div>
     </div>
   );
 };

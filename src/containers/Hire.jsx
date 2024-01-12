@@ -4,7 +4,7 @@ import Button from '../components/Button';
 
 function Hire() {
   return (
-    <div className='mt-20 Hire-main h-[60vh] flex justify-center items-center'>
+    <div className='Hire-main h-[60vh] flex justify-center items-center'>
 
         <div>
          <PrimaryHeading style={"mx-auto font-bold text-white text-center sm:w-[100%] w-[100%]"} title={"Interested in working with me?"}/>

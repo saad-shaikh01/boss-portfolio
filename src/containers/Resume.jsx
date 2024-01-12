@@ -58,17 +58,17 @@ const experienceData = [
 
 const Resume = () => {
   return (
-    <div className="container mx-auto py-8">
+    <div className="container mx-auto py-8 md:py-20">
       <PrimaryHeading
         title={"A Summary of My Resume"}
-        style={"w-full text-center mb-8 mt-8"}
+        style={"w-full sm:w-[100%] text-center mb-8 mt-8"}
       />
       <div className="flex flex-col md:flex-row mt-2rem lg:mt-[4rem]">
-        <div className="md:w-1/2 pr-8">
+        <div className="md:w-1/2 lg:pr-8">
           <div>
             <div className="mb-8 ">
               <SubHeading style={"lg:text-[28px]"} title={"My Education"} />
-              <div className="border-s ps-4 mt-8 border-dark-primary">
+              <div className="border-s-2 border-s-dark-primary ps-4 mt-8 border-dark-primary">
                 {educationData.map((education, index) => (
                   <div key={index} className="mb-4 border-b pb-6 ">
                     <SecondaryText
@@ -76,7 +76,7 @@ const Resume = () => {
                       style={"font-semibold"}
                     />
                     <SecondaryText
-                      style={"md:text-[16px] text-[15px]"}
+                      style={"md:text-[17px]  py-2"}
                       title={`${education.institution} / ${education.duration}`}
                     />
                     <PrimaryText title={education.description} />
@@ -91,7 +91,7 @@ const Resume = () => {
             <div className="mb-8">
               <SubHeading style={"lg:text-[28px]"} title={"My Experience"} />
 
-              <div className="border-l ps-4 mt-8 border-dark-primary">
+              <div className="border-l-2 border-l-dark-primary ps-4 mt-8 border-dark-primary">
                 {experienceData.map((experience, index) => (
                   <div key={index} className="mb-4 border-b pb-6">
                     <SecondaryText
@@ -99,7 +99,7 @@ const Resume = () => {
                       style={"font-semibold"}
                     />
                     <SecondaryText
-                      style={"md:text-[16px] text-[15px]"}
+                      style={"md:text-[17px] py-2"}
                       title={`${experience.institution} / ${experience.duration}`}
                     />
                     <PrimaryText title={experience.description} />

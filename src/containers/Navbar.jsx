@@ -38,10 +38,10 @@ const Navbar = () => {
   return (
     <>
       {/* Navbar */}
-      <nav className="sticky top-0 text-center bg-gray-200 justify-between py-2 px-[4rem] flex items-center">
+      <nav className="sticky top-0 z-[99] text-center bg-gray-200 justify-between px-[4rem] flex items-center">
         {/* ...existing code... */}
-         <div className=" w-1/4" >
-          <PrimaryHeading title={"Ahsan Akram"} style={" w-full  mb-0 "} />
+         <div className="w-1/4 pt-4" >
+          <PrimaryHeading title={"Ahsan Akram"} style={" w-full sm:w-[100%]"} />
           </div>
         <div class="w-2/3 hidden lg:block mx-auto">
           <div class="navLink">
@@ -49,7 +49,7 @@ const Navbar = () => {
               <a
                 key={title} // Remember to add a unique key when mapping through elements in React
                 href={url}
-                className="block mt-4 lg:inline-block  text-[18px]  lg:mt-0  hover:text-blue-400 mr-8"
+                className="block mt-4 font-semibold lg:inline-block  text-[18px]  lg:mt-0  hover:text-blue-400 mr-8"
               >
                 {title}
               </a>
