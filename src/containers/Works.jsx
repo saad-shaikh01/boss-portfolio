@@ -47,7 +47,7 @@ export default function Works() {
   const [currentCategory, setCurrentCategory] = useState("All");
 
   return (
-    <div className="bg-gray-200 py-2 lg:py-[4rem]">
+    <div className="bg-[#f8f9fa] py-2 lg:py-[4rem]">
       <div className="container mx-auto">
         <div>
           <PrimaryHeading

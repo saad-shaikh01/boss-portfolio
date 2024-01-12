@@ -20,12 +20,12 @@ import { Icons } from "../assets/icons/icons";
 const Navbar = () => {
   const [showSidebar, setShowSidebar] = useState(false);
   const links = [
-    ["Home", "/aa"],
-    ["About", "/aa"],
-    ["Services", "/aa"],
-    ["Portfolio", "/aa"],
-    ["Testimonial", "/aa"],
-    ["Blog", "/aa"],
+    ["HOME", "/aa"],
+    ["ABOUT", "/aa"],
+    ["SERVICES", "/aa"],
+    ["PORTFOLIO", "/aa"],
+    ["TESTIMONIAL", "/aa"],
+    ["CONTACT", "/aa"],
   ];
 
   const socialLinks = [
@@ -38,10 +38,10 @@ const Navbar = () => {
   return (
     <>
       {/* Navbar */}
-      <nav className="sticky top-0 z-[99] text-center bg-gray-200 justify-between px-[4rem] flex items-center">
+      <nav className="sticky top-0 z-[99] text-center border-b bg-white justify-between px-4 xl:px-[4rem] flex items-center">
         {/* ...existing code... */}
-         <div className="w-1/4 pt-4" >
-          <PrimaryHeading title={"Ahsan Akram"} style={" w-full sm:w-[100%]"} />
+         <div className="w-[50%] lg:w-1/4 pt-4" >
+          <PrimaryHeading title={"Ahsan Akram"} style={"lg:text-[25px] sm:w-[100%]"} />
           </div>
         <div class="w-2/3 hidden lg:block mx-auto">
           <div class="navLink">
@@ -49,7 +49,7 @@ const Navbar = () => {
               <a
                 key={title} // Remember to add a unique key when mapping through elements in React
                 href={url}
-                className="block mt-4 font-semibold lg:inline-block  text-[18px]  lg:mt-0  hover:text-blue-400 mr-8"
+                className="block mt-4 font-semibold lg:inline-block  text-[18px] text-[black] lg:mt-0  mr-8"
               >
                 {title}
               </a>
@@ -98,7 +98,7 @@ const Navbar = () => {
             title={<FontAwesomeIcon icon={faBars} />}
           ></CustomButton> */}
         </div>
-        <div className="w-1/4 bg-red-900 lg:hidden ">
+        <div className="w-1/4 lg:hidden ">
           <Button onClick={() => setShowSidebar(!showSidebar)} style={'w-[50px]'} text={<FontAwesomeIcon icon={Icons.DownArrow} />} />
           {/* <Button onClick={() => console.log('console soncols sadfasdf')} style={'w-[50px]'} text={<FontAwesomeIcon icon={Icons.DownArrow} />} /> */}
         </div>
@@ -106,25 +106,25 @@ const Navbar = () => {
 
       {/* Sidebar */}
       <div
-        className={`h-screen sm:W-[100%]  w-[100%] z-[1] lg:hidden top-0 right-0 bg-gray-800 p-10 ${
+        className={`sm:W-[100%]  w-[100%] z-[1] lg:hidden top-0 right-0 bg-gray-100 p-10 ${
           showSidebar ? "block" : "hidden"
         }`}
       >
-        <div className="absolute top-4 right-10">
+        {/* <div className="absolute top-4 right-10">
           <button
             onClick={() => setShowSidebar(!showSidebar)}
             className="z-[] flex items-center px-3 py-2 border rounded text-gray-300 border-gray-400 hover:text-white hover:border-white"
           >
             <FontAwesomeIcon icon={faClose} />
           </button>
-        </div>
+        </div> */}
 
-        <div id="sidebar" class=" text-center lg: bg-gray-800 p-">
+        <div id="sidebar" class=" text-center  p-">
           {links.map(([title, url]) => (
             <a
               key={title} // Remember to add a unique key when mapping through elements in React
               href={url}
-              className=" block mt-4 text-white hover:text-gray-400"
+              className=" block mt-4 font-semibold text-blue-400 hover:text-gray-400"
             >
               {title}
             </a>

@@ -97,7 +97,7 @@ const servicesData = [
 
 const Service = () => {
   return (
-    <div className="bg-gray-100 py-10 md:py-20"> 
+    <div className="bg-[#f8f9fa] py-10 md:py-20"> 
     <div className="container mx-auto py-8">
       <PrimaryHeading
         title={"How I can help your next project"}

@@ -54,18 +54,18 @@ const TestimonialSlider = () => {
   };
 
   return (
-    <div className="bg-gray-400 py-[6rem]">
-      <div className="container w-[60%]  mx-auto lg:my-[4rem]">
+    <div className="bg-[#929597] pb-28 pt-10 lg:py-[6rem]">
+      <div className="container w-[90%] xl:w-[60%]  mx-auto lg:my-[4rem]">
         <div>
           <PrimaryHeading
             title={"What Some of my Clients Say"}
-            style={"w-full text-center text-white"}
+            style={"w-full lg:w-[100%] sm:w-[100%] text-[15px] text-center text-white"}
           />
         </div>
         <Slider {...settings}>
           {testimonialData.map((testimonial, index) => (
             <div key={index} className="text-center mt-10">
-              <SecondaryText title={testimonial.content} style={"text-white"} />
+              <SecondaryText title={testimonial.content} style={"lg:w-[90%] mx-auto text-white"} />
               <div className="flex justify-center items-center my-4 ">
                 <div className="rounded-full overflow-hidden h-16 w-16 flex-shrink-0">
                   <img
@@ -77,11 +77,11 @@ const TestimonialSlider = () => {
                 <div className="ml-4">
                   <PrimaryText
                     title={testimonial.clientName}
-                    style={"font-semibold text-white"}
+                    style={"font-semibold text-[10px] text-white"}
                   />
                   <PrimaryText
                     title={testimonial.designation}
-                    style={"text-white  text-[14px]"}
+                    style={"text-white  text-[9px]"}
                   />
                 </div>
               </div>

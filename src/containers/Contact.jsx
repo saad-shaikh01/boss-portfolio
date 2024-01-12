@@ -36,17 +36,17 @@ function Contact() {
 
                         <div className='pt-10'>
                             <SecondaryText style={"pb-4  md:text-[15px] lg:text-[16px]"} title={"What is Your Name:"} />
-                            <input required autoComplete='off' type='text' placeholder='' className='duration-300 ease-in-out h-6 outline-none border-b-2 focus:border-[black] bg-transparent  border-gray-300 w-[100%]'></input>
+                            <input required autoComplete='off' type='text' placeholder='' className='duration-300 ease-in-out h-6 outline-none border-b-2 focus:border-[black] bg-transparent  border-gray-400 w-[100%]'></input>
                         </div>
 
                         <div className='pt-10'>
                             <SecondaryText style={"pb-4  md:text-[15px] lg:text-[18px]"} title={"Your Email Address:"} />
-                            <input required autoComplete='off' type='email' placeholder='' className='duration-300 ease-in-out h-6 outline-none border-b-2 focus:border-[black] bg-transparent  border-gray-300 w-[100%]'></input>
+                            <input required autoComplete='off' type='email' placeholder='' className='duration-300 ease-in-out h-6 outline-none border-b-2 focus:border-[black] bg-transparent  border-gray-400 w-[100%]'></input>
                         </div>
 
                         <div className='pt-10'>
                             <SecondaryText style={"pb-4  md:text-[15px] lg:text-[18px]"} title={"How can I Help you?:"} />
-                            <textarea required autoComplete='off' className='duration-300 ease-in-out h-20 outline-none border-b-2 bg-transparent focus:border-[black] border-gray-300 border-[black] w-[100%]'></textarea>
+                            <textarea required autoComplete='off' className='duration-300 ease-in-out h-20 outline-none border-b-2 bg-transparent focus:border-[black] border-gray-400 border-[black] w-[100%]'></textarea>
                         </div>
 
                         <Button text="Send" style="bg-dark-primary font-bold flex justify-center" />
