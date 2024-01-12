@@ -1,4 +1,5 @@
 import React from "react";
+import Sechead from "../components/Sechead";
 import {
   PrimaryHeading,
   PrimaryText,
@@ -59,9 +60,10 @@ const experienceData = [
 const Resume = () => {
   return (
     <div className="container mx-auto py-8 md:py-20">
+          <Sechead text="Resume" style={"mx-auto"}/>
       <PrimaryHeading
         title={"A Summary of My Resume"}
-        style={"w-full sm:w-[100%] text-center mb-8 mt-8"}
+        style={"w-full sm:w-[100%] text-center mb-8 mt-2"}
       />
       <div className="flex flex-col md:flex-row mt-2rem lg:mt-[4rem]">
         <div className="md:w-1/2 lg:pr-8">

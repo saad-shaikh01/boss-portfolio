@@ -26,11 +26,18 @@ function Skills() {
         className="w-full h-2"
         style={{ borderRadius: '4px' }} // Optional: Add border-radius for rounded corners
       ></progress>
-      <style jsx>{`
-        progress::-webkit-progress-value {
-          background-color:  #E3EEEF;
-          border-radius: 999px;}`}
-        </style>
+     <style jsx>{`
+  progress::-webkit-progress-bar {
+    background-color: #e8ecef;
+    border-radius: 999px;
+  }
+
+  progress::-webkit-progress-value {
+    background-color: #d1ee2d;
+    border-radius: 999px;
+  }
+`}</style>
+
     </div>
   );
 

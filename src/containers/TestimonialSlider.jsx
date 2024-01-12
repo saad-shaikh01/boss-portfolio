@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { PrimaryHeading, PrimaryText, SecondaryText } from "../components/Text";
+import Sechead from "../components/Sechead";
 
 const testimonialData = [
   {
@@ -43,7 +44,7 @@ const TestimonialSlider = () => {
       </div>
     ),
     customPaging: () => (
-      <div className="h-4 w-4 mx-2 mt-10  bg-gray-500 rounded-full hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300"></div>
+      <div className="h-4 w-4 mx-2 mt-10  bg-gray-500 rounded-full hover:bg-dark-primary active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300"></div>
     ),
     prevArrow: (
       <button className="slick-prev" style={{ display: "none" }}></button>
@@ -55,8 +56,9 @@ const TestimonialSlider = () => {
 
   return (
     <div className="bg-[#929597] pb-28 pt-10 lg:py-[6rem]">
-      <div className="container w-[90%] xl:w-[60%]  mx-auto lg:my-[4rem]">
+      <div className="container w-[90%]  mx-auto lg:my-[4rem]">
         <div>
+        <Sechead text="Client Speak" style={"mb-8 mx-auto"}/>
           <PrimaryHeading
             title={"What Some of my Clients Say"}
             style={"w-full lg:w-[100%] sm:w-[100%] text-[15px] text-center text-white"}

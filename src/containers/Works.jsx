@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { PrimaryHeading } from "../components/Text";
+import Sechead from "../components/Sechead";
 
 const projects = [
   {
@@ -50,9 +51,10 @@ export default function Works() {
     <div className="bg-[#f8f9fa] py-2 lg:py-[4rem]">
       <div className="container mx-auto">
         <div>
+        <Sechead text="Portfolio" style={"mx-auto"}/>
           <PrimaryHeading
             title={"Some of my most recent projects"}
-            style={"w-full sm:w-[100%] text-center mb-8 lg:mb-[4rem] mt-8"}
+            style={"w-full sm:w-[100%] text-center mb-8 lg:mb-[4rem] mt-2"}
           />
         </div>
 

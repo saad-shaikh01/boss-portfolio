@@ -1,10 +1,13 @@
 import React from "react";
 import { PrimaryHeading, SecondaryText, PrimaryText , SecondaryHeading , } from "../components/Text";
+import Sechead from "../components/Sechead";
 
 function About() {
     return (
         <div className="container mx-auto my-12 md:my-20" id="Know">
             <div>
+
+                <Sechead text="About Me" style={""}/>
                 <PrimaryHeading
                     style={"mx-auto sm:w-[100%] text-start lg:text-center w-[100%]"}
                     title={"Know Me More"}

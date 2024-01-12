@@ -56,6 +56,7 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { PrimaryHeading, PrimaryText, SubHeading } from "../components/Text";
 import { Icons } from "../assets/icons/icons";
+import Sechead from "../components/Sechead";
 const servicesData = [
   {
     icon: Icons.uiUxDesign,
@@ -99,6 +100,7 @@ const Service = () => {
   return (
     <div className="bg-[#f8f9fa] py-10 md:py-20"> 
     <div className="container mx-auto py-8">
+    <Sechead text="What I Do?" style={"mx-auto"}/>
       <PrimaryHeading
         title={"How I can help your next project"}
         style={"w-full sm:w-[100%] text-center mx-auto mb-8 lg:mt-8"}
