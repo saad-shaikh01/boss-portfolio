@@ -47,42 +47,41 @@ const servicesData = [
 ];
 
 const Service = () => {
+  useEffect(() => {
+    // Animation Logic
+    gsap.utils.toArray(".service-item").forEach((item, index) => {
+      gsap.from(item, {
+        opacity: 0,
+        y: 50,
+        scale: 0.5,
+        rotation: -45,
+        duration: 0.5,
+        stagger: 0.2,
+        // ease: "power3.out", // Experiment with different easing functions
+        ease: "elastic.out(1, 0.3)", // Experiment with different easing functions
+      });
 
-
-useEffect(() => {
-  // Animation Logic
-  gsap.utils.toArray(".service-item").forEach((item, index) => {
-    gsap.from(item, {
-      opacity: 0,
-      y: 50,
-      scale: 0.5,
-      rotation: -45,
-      duration: 1,
-      stagger: 0.2,
-      ease: "power3.out", // Experiment with different easing functions
+      gsap.to(item, {
+        opacity: 1,
+        y: 0,
+        scale: 1,
+        rotation: 0,
+        duration: 1,
+        scrollTrigger: {
+          trigger: item,
+          start: "top 95%",
+          end: "bottom 96%",
+          scrub: 6,
+        },
+        ease: "power3.out", // Use the same easing function for consistency
+      });
     });
-
-    gsap.to(item, {
-      opacity: 1,
-      y: 0,
-      scale: 1,
-      rotation: 0,
-      duration: 1,
-      scrollTrigger: {
-        trigger: item,
-        start: "top 95%",
-        end: "bottom 50%",
-        scrub: 6,
-      },
-      ease: "power3.out", // Use the same easing function for consistency
-    });
-  });
-}, []);
+  }, []);
 
   return (
     <div className="bg-[#f8f9fa] py-10 md:py-20">
       <div className="container mx-auto py-8">
-    <Sechead text="What I Do?" style={"mx-auto"}/>
+        <Sechead text="What I Do?" style={"mx-auto"} />
         <PrimaryHeading
           title={"How I can help your next project"}
           style={"w-full sm:w-[100%] text-center mx-auto mb-8 lg:mt-8"}

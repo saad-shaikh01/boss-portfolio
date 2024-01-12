@@ -10,8 +10,16 @@ module.exports = {
       },
       colors: {
         dark: {
-          // primary: '#ffff', 
-          primary: '#d1ee2d', 
+          primary: '#f8f9fa', 
+          // primary: '#d1ee2d',
+          
+          // primary: '#d1ee2d',
+          
+          // primary: '#d1ee2d',
+          
+          // primary: '#d1ee2d',
+          
+          
           secondary: '#2d3748', 
           regular: '#ffff',
           // black: '#000000'
