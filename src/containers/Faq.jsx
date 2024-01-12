@@ -3,6 +3,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCaretDown, faCaretUp } from '@fortawesome/free-solid-svg-icons';
 import faqimg from '../assets/images/faq.png';
 import { PrimaryHeading } from '../components/Text';
+import Sechead from '../components/Sechead';
+
 
 const FAQItem = ({ index, question, answer, isOpen, onToggle }) => {
   const toggleAnswerVisibility = () => {
@@ -28,10 +30,12 @@ const Faq = () => {
   };
 
   return (
-    <div className='container my-10 md:my-20 mx-auto md:flex-nowrap flex-wrap gap-12 flex items-center justify-between'>
+    <div className='bg-[#f8f9fa] py-10'>
+    <div className='container py-10 md:py-20 mx-auto md:flex-nowrap flex-wrap gap-12 flex items-center justify-between'>
 
 
 <div className='lg:w-[60%] w-[100%]'>
+<Sechead text="FAQ" style={"lg:mx-[0px] mb-4"}/>
 <PrimaryHeading style={"w-[100%] sm:w-[100%] pb-10"}  title={"Have any questions?"} />
 
       <FAQItem
@@ -80,6 +84,7 @@ const Faq = () => {
     <img src={faqimg} className='mx-auto' />
 </div>
 
+    </div>
     </div>
   );
 };

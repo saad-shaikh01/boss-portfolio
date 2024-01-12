@@ -26,7 +26,7 @@ function Hero() {
     });
   }, []);
   return (
-    <div  className="relative h-[100vh]">
+    <div  className="relative h-[120vh] lg:h-[100vh]">
       {/* Video */}
       <div className="absolute inset-0">
         <video muted autoPlay loop className="h-full w-full object-cover">
