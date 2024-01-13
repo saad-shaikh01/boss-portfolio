@@ -8,7 +8,11 @@ import {
   faInstagram,
   faFacebook,
 } from "@fortawesome/free-brands-svg-icons";
-import { PrimaryHeading, PrimaryText, SecondaryHeading } from "../components/Text";
+import {
+  PrimaryHeading,
+  PrimaryText,
+  SecondaryHeading,
+} from "../components/Text";
 import Button from "../components/Button";
 import { Icons } from "../assets/icons/icons";
 const Navbar = () => {
@@ -34,9 +38,12 @@ const Navbar = () => {
       {/* Navbar */}
       <nav className="fixed lg:sticky top-0 z-[99] w-[100%]  text-center border-b bg-white justify-between px-4 xl:px-[4rem] flex items-center">
         {/* ...existing code... */}
-         <div className="w-[50%] lg:w-1/4 pt-4" >
-          <PrimaryHeading title={"Ahsan Akram"} style={"lg:text-[25px] sm:w-[100%]"} />
-          </div>
+        <div className="w-[50%] lg:w-1/4 pt-4">
+          <PrimaryHeading
+            title={"Ahsan Akram"}
+            style={"lg:text-[25px] sm:w-[100%]"}
+          />
+        </div>
         <div class="w-2/3 hidden lg:block mx-auto">
           <div class="navLink">
             {links.map(([title, url]) => (
@@ -58,7 +65,7 @@ const Navbar = () => {
 
         {/* Burger Icon */}
         <div className="w-1/4 hidden lg:block ">
-        <div className="flex justify-center ">
+          <div className="flex justify-center ">
             {socialLinks.map(([title, url]) => (
               <a
                 key={title}
@@ -84,12 +91,19 @@ const Navbar = () => {
               </a>
             ))}
           </div>
-
         </div>
         <div className="w-1/4 lg:hidden ">
-        <Button onClick={() => setShowSidebar(!showSidebar)} style={'w-[50px]'} text={<FontAwesomeIcon icon={Icons.Bars} />} />
-
-          {/* <Button onClick={() => console.log('console soncols sadfasdf')} style={'w-[50px]'} text={<FontAwesomeIcon icon={Icons.DownArrow} />} /> */}
+        <Button
+          onClick={() => setShowSidebar(!showSidebar)}
+          style={"w-[50px]"}
+          text={
+            showSidebar ? (
+              <FontAwesomeIcon icon={Icons.Close} />
+            ) : (
+              <FontAwesomeIcon icon={Icons.Bars} />
+            )
+          }
+        />
         </div>
       </nav>
 
@@ -99,7 +113,6 @@ const Navbar = () => {
           showSidebar ? "block" : "hidden"
         }`}
       >
-
         <div id="sidebar" class=" text-center  p-">
           {links.map(([title, url]) => (
             <a
@@ -111,8 +124,6 @@ const Navbar = () => {
             </a>
           ))}
         </div>
-
-    
       </div>
     </>
   );

@@ -63,8 +63,9 @@
 // export default Hero;
 
 
-import React, { useEffect, useRef } from "react";
-import gsap from "gsap";
+import React, { useEffect } from "react";
+import { gsap } from "gsap";
+import SplitText from "split-text";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { PrimaryHeading, SecondaryText } from "../components/Text";
 import { Icons } from "../assets/icons/icons";
@@ -73,32 +74,167 @@ import profile from "../assets/images/profile2.jpg";
 import Button from "../components/Button";
 
 function Hero() {
-  const imageRef = useRef(null);
-  const primaryHeadingRef = useRef(null);
+
 
   useEffect(() => {
-    const icon = document.getElementById("arrowIcon");
-        icon.classList.add("opacity-100", "animate-bounce");
+    // Animation for the primary heading
+    // gsap.from(".hero-heading", {
+    //   opacity: 0,
+    //   y: 50,
+    //   duration: 1,
+    //   delay: 0.5,
+    // });
 
-    const tl = gsap.timeline();
+    // // Animation for the secondary heading
+    // gsap.from(".secondary-text", {
+    //   opacity: 0,
+    //   y: 50,
+    //   duration: 1,
+    //   delay: 1,
+    // });
 
-    // Initialize elements with initial properties
-    gsap.set(imageRef.current, { opacity: 0, y: -70 });
-    gsap.set(primaryHeadingRef.current, { opacity: 0, x: 50 });
-    // gsap.set("#arrowIcon", { opacity: 0, y: 20 });
+    // // Animation for the button
+    // gsap.from(".button", {
+    //   opacity: 0,
+    //   y: 50,
+    //   duration: 1,
+    //   delay: 1.5,
+    // });
 
-    // Animation for the profile image
-    tl.to(imageRef.current, { opacity: 1, y: 0, duration: 2 });
 
-    // Animation for the heading
-    tl.to(primaryHeadingRef.current, { opacity: 1, x: 0, duration: 1 }, "-=0.5");
+    // gsap.to(".hero-heading", {
+    //   opacity: 1,
+    //   y: 0,
+    //   duration: 1,
+    //   delay: 0.5,
+    // });
 
-    // Animation for the arrow icon
-    // tl.to("#arrowIcon", { opacity: 1, y: 0, duration: 0.5 }, "-=0.5");
+    // // Animation for the secondary heading
+    // gsap.to(".secondary-text", {
+    //   opacity: 1,
+    //   y: 0,
+    //   duration: 1,
+    //   delay: 1,
+    // });
 
-    // Add more animations as needed
+    // // Animation for the button
+    // gsap.to(".button", {
+    //   opacity: 1,
+    //   y: 0,
+    //   duration: 1,
+    //   delay: 1.5,
+    // });
 
+
+// Animation for the hero heading
+gsap.from(".hero-heading", {
+  opacity: 0,
+  y: 50,
+  duration: 1,
+  delay: 0.5,
+  ease: "power3.out",
+});
+
+// Animation for the secondary heading
+gsap.from(".secondary-text", {
+  opacity: 0,
+  y: 50,
+  duration: 1,
+  delay: 1,
+  ease: "power3.out",
+  stagger: 0.2, // Staggered animation for a dynamic effect
+});
+
+// Animation for the button
+gsap.from(".button", {
+  opacity: 0,
+  scale: 0.5,
+  duration: 1,
+  delay: 1.5,
+  ease: "power3.out",
+  rotation: 360,
+  backgroundColor: "white", // Change background color for a modern touch
+});
+
+// Animation for the hero heading
+gsap.to(".hero-heading", {
+  opacity: 1,
+  y: 0,
+  duration: 1,
+  delay: 0.5,
+  ease: "power3.out",
+});
+
+// Animation for the secondary heading
+gsap.to(".secondary-text", {
+  opacity: 1,
+  y: 0,
+  duration: 1,
+  delay: 1,
+  ease: "power3.out",
+});
+
+// Animation for the button
+gsap.to(".button", {
+  opacity: 1,
+  scale: 1,
+  duration: 1,
+  delay: 1.5,
+  ease: "power3.out",
+  rotation: 0,
+  backgroundColor: "blue", // Change background color back to original
+});
+
+
+
+
+    
+
+    // const tl = gsap.timeline();
+
+    // // Animation for the primary heading
+    // tl.from(".hero-heading", {
+    //   opacity: 0,
+    //   y: 50,
+    //   duration: 1,
+    //   delay: 0.5,
+    // });
+
+    // // Animation for the secondary heading
+    // tl.from(".secondary-text", {
+    //   opacity: 0,
+    //   y: 50,
+    //   duration: 1,
+    //   stagger: 0.2, // Stagger for a more dynamic effect
+    // });
+
+    // // Animation for the button
+    // tl.from(".button", {
+    //   opacity: 0,
+    //   y: 50,
+    //   duration: 1,
+    // });
+
+
+
+    // // Bounce animation for the arrow icon
+    // const icon = document.getElementById("arrowIcon");
+    // gsap.from(icon, {
+    //   opacity: 0,
+    //   y: 20,
+    //   duration: 1,
+    //   delay: 2,
+    //   onComplete: () => {
+    //     icon.classList.add("animate-bounce");
+    //   },
+    // });
   }, []);
+
+  // useEffect(() => {
+  //   const icon = document.getElementById("arrowIcon");
+  //       icon.classList.add("opacity-100", "animate-bounce");
+
+  // }, []);
 
   return (
     <div className="relative h-[120vh] lg:h-[100vh]">
@@ -113,12 +249,10 @@ function Hero() {
       <div className="absolute inset-0 flex items-center justify-center bg-dark-primary bg-opacity-90">
         <div className="text-center">
           <img
-            ref={imageRef}
             src={profile}
             className="profile-image w-36 h-36 rounded-full border border-4 border-[white] mx-auto"
           />
           <PrimaryHeading
-            ref={primaryHeadingRef}
             style={
               "hero-heading mx-auto pt-4 sm:w-[100%] lg:w-[50%] sm:text-[22px]"
             }

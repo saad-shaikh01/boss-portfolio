@@ -1,5 +1,5 @@
 import { faTwitter, faLinkedin, faGithub, faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
-import { faPlus, faArrowDown , faLaptopCode, faPaintBrush, faMobileAlt , faBars} from '@fortawesome/free-solid-svg-icons';
+import { faPlus, faArrowDown , faLaptopCode, faPaintBrush, faMobileAlt , faBars, faClose} from '@fortawesome/free-solid-svg-icons';
 
 
 export const Icons = {
@@ -14,4 +14,5 @@ export const Icons = {
   uiUxDesign: faPaintBrush,
   webDevelopment: faLaptopCode,
   Bars: faBars, // Add the Bars icon
+  Close: faClose
 };

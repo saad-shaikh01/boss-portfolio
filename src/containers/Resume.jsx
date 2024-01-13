@@ -58,9 +58,11 @@ const experienceData = [
 ];
 
 const Resume = () => {
+
+  
   return (
     <div className="container mx-auto py-8 md:py-20">
-          <Sechead text="Resume" style={"mx-auto"}/>
+      <Sechead text="Resume" style={"mx-auto"} />
       <PrimaryHeading
         title={"A Summary of My Resume"}
         style={"w-full sm:w-[100%] text-center mb-8 mt-2"}
