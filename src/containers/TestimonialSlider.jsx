@@ -55,7 +55,7 @@ const TestimonialSlider = () => {
   };
 
   return (
-    <div className="bg-[#929597] pb-28 pt-10 lg:py-[6rem]">
+    <div className="bg-[#929597] pb-28 pt-10 lg:py-[6rem]" id="Review">
       <div className="container w-[90%]  mx-auto lg:my-[4rem]">
         <div>
         <Sechead text="Client Speak" style={"mb-8 mx-auto"}/>
