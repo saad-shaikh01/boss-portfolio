@@ -6,7 +6,7 @@ import Button from '../components/Button';
 
 function Contact() {
     return (
-        <div className='bg-dark-primary py-10 md:py-20'>
+        <div className='bg-dark-primary py-10 md:py-20' id="Contact">
             <div className='container flex-wrap lg:flex-nowrap flex justify-between mx-auto gap-20'>
 
                 <div className='contact-content lg:w-[50%]'>
@@ -19,11 +19,11 @@ function Contact() {
                     <SecondaryText style={""} title={"(+060) 444 434 444"} />
 
                     <div className='contact-content-sociallinks flex gap-8 mt-16'>
-                        <FontAwesomeIcon icon={Icons.Twitter} className='cursor-pointer text-black text-2xl' />
-                        <FontAwesomeIcon icon={Icons.LinkedIn} className='cursor-pointer text-black text-2xl' />
-                        <FontAwesomeIcon icon={Icons.GitHub} className='cursor-pointer text-black text-2xl' />
-                        <FontAwesomeIcon icon={Icons.Facebook} className='cursor-pointer text-black text-2xl' />
-                        <FontAwesomeIcon icon={Icons.Instagram} className='cursor-pointer text-black text-2xl' />
+                        <FontAwesomeIcon icon={Icons.Twitter} className='ease-in-out duration-500 hover:-translate-y-2 cursor-pointer text-black text-2xl' />
+                        <FontAwesomeIcon icon={Icons.LinkedIn} className='ease-in-out duration-500 hover:-translate-y-2 cursor-pointer text-black text-2xl' />
+                        <FontAwesomeIcon icon={Icons.GitHub} className='ease-in-out duration-500 hover:-translate-y-2 cursor-pointer text-black text-2xl' />
+                        <FontAwesomeIcon icon={Icons.Facebook} className='ease-in-out duration-500 hover:-translate-y-2 cursor-pointer text-black text-2xl' />
+                        <FontAwesomeIcon icon={Icons.Instagram} className='ease-in-out duration-500 hover:-translate-y-2 cursor-pointer text-black text-2xl' />
                     </div>
 
                 </div>
@@ -49,7 +49,7 @@ function Contact() {
                             <textarea required autoComplete='off' className='duration-300 ease-in-out h-20 outline-none border-b-2 bg-transparent focus:border-[black] border-gray-400 border-[black] w-[100%]'></textarea>
                         </div>
 
-                        <Button text="Send" style="bg-dark-primary font-bold flex justify-center" />
+                        <Button text="Send " style="bg-dark-primary font-bold flex justify-center" />
 
                     </form>
                 </div>

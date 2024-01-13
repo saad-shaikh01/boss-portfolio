@@ -79,7 +79,7 @@ const Service = () => {
   }, []);
 
   return (
-    <div className="bg-[#f8f9fa] py-10 md:py-20">
+    <div className="bg-[#f8f9fa] py-10 md:py-20" id="Service">
       <div className="container mx-auto py-8">
         <Sechead text="What I Do?" style={"mx-auto"} />
         <PrimaryHeading

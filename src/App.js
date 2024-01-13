@@ -11,10 +11,12 @@ import Contact from "./containers/Contact";
 import Footer from "./containers/Footer";
 import Works from "./containers/Works";
 import Navbar from "./containers/Navbar";
+import TopButton from "./components/TopButton";
 
 function App() {
   return (
     <div>
+      <TopButton/>
       <Hero />
       <Navbar />
       <About />

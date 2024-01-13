@@ -19,11 +19,11 @@ const Navbar = () => {
   const [showSidebar, setShowSidebar] = useState(false);
   const links = [
     ["HOME", "/aa"],
-    ["ABOUT", "/aa"],
-    ["SERVICES", "/aa"],
-    ["PORTFOLIO", "/aa"],
-    ["TESTIMONIAL", "/aa"],
-    ["CONTACT", "/aa"],
+    ["ABOUT", "#Know"],
+    ["SERVICES", "#Service"],
+    ["PORTFOLIO", "#Work"],
+    ["TESTIMONIAL", "#Review"],
+    ["CONTACT", "#Contact"],
   ];
 
   const socialLinks = [
