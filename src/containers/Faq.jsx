@@ -35,7 +35,7 @@ const Faq = () => {
 
 
 <div className='lg:w-[60%] w-[100%]'>
-<Sechead text="FAQ" style={"lg:mx-[0px] mb-4"}/>
+<Sechead text="FAQ" style={"xl:mx-[0px] lg:mx-[0px] mb-4"}/>
 <PrimaryHeading style={"w-[100%] sm:w-[100%] pb-10"}  title={"Have any questions?"} />
 
       <FAQItem

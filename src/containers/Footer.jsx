@@ -8,11 +8,11 @@ function Footer() {
 
                 <SecondaryText title={<span className="text-[10px] text-white md:text-sm lg:text-[18px] font-semibold"> Copyright © 2024
                     <span className="your-custom-style ml-2 text-dark-primary cursor-pointer hover:border-none ease-in-out duration-300 border-b border-dark-primary">
-                        Ahsan Akram </span>. All Rights Reserved.</span>} />
+                        <a href="/">Ahsan Akram</a> </span>. All Rights Reserved.</span>} />
 
                 <SecondaryText title={<span className="text-[10px] text-white md:text-sm lg:text-[18px] font-semibold"> Developed By
                     <span className=" ml-2 your-custom-style text-dark-primary cursor-pointer hover:border-none ease-in-out duration-300 border-b border-dark-primary">
-                        AsmatechGlobal </span></span>} />
+                        <a href="https://www.asmatechglobal.com/" target='blank'>AsmatechGlobal</a> </span></span>} />
 
             </div>
 
