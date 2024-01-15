@@ -4,7 +4,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faTwitter,
   faLinkedin,
-  faGithub,
   faInstagram,
   faFacebook,
 } from "@fortawesome/free-brands-svg-icons";
@@ -18,7 +17,7 @@ import { Icons } from "../assets/icons/icons";
 const Navbar = () => {
   const [showSidebar, setShowSidebar] = useState(false);
   const links = [
-    ["HOME", "/aa"],
+    ["HOME", "/"],
     ["ABOUT", "#Know"],
     ["SERVICES", "#Service"],
     ["PORTFOLIO", "#Work"],
@@ -39,10 +38,10 @@ const Navbar = () => {
       <nav className="fixed lg:sticky top-0 z-[99] w-[100%]  text-center border-b bg-white justify-between px-4 xl:px-[4rem] flex items-center">
         {/* ...existing code... */}
         <div className="w-[50%] lg:w-1/4 pt-4">
-          <PrimaryHeading
+         <a href="/"> <PrimaryHeading
             title={"Ahsan Akram"}
             style={"lg:text-[25px] sm:w-[100%]"}
-          />
+          /></a>
         </div>
         <div class="w-2/3 hidden lg:block mx-auto">
           <div class="navLink">
@@ -76,14 +75,12 @@ const Navbar = () => {
                   icon={
                     title === "Twitter"
                       ? faTwitter
-                      : title === "Facebook"
-                      ? faFacebook
                       : title === "Instagram"
                       ? faInstagram
                       : title === "LinkedIn"
                       ? faLinkedin
-                      : title === "GitHub"
-                      ? faGithub
+                      : title === "Facebook"
+                      ? faFacebook
                       : null
                   }
                   // size="sm"

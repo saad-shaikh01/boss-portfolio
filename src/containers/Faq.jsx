@@ -85,14 +85,13 @@ const Faq = () => {
     });
   }, []);
   return (
-    <div className="bg-[#f8f9fa] py-10">
-      <div className="container py-10 md:py-20 mx-auto md:flex-nowrap flex-wrap gap-12 flex items-center justify-between">
-        <div className="lg:w-[60%] w-[100%]">
-          <Sechead text="FAQ" style={"lg:mx-[0px] mb-4"} />
-          <PrimaryHeading
-            style={"w-[100%] sm:w-[100%] pb-10"}
-            title={"Have any questions?"}
-          />
+    <div className='bg-[#f8f9fa] py-10'>
+    <div className='container py-10 md:py-20 mx-auto md:flex-nowrap flex-wrap gap-12 flex items-center justify-between'>
+
+
+<div className='lg:w-[60%] w-[100%]'>
+<Sechead text="FAQ" style={"xl:mx-[0px] lg:mx-[0px] mb-4"}/>
+<PrimaryHeading style={"w-[100%] sm:w-[100%] pb-10"}  title={"Have any questions?"} />
 
           <FAQItem
             index={0}
