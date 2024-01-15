@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
+import gsap from "gsap";
 import Sechead from "../components/Sechead";
 import {
   PrimaryHeading,
@@ -7,6 +8,35 @@ import {
   SubHeading,
 } from "../components/Text";
 
+const animateEntry = (entry) => {
+  gsap.from(entry, {
+    opacity: 0,
+    y: 20,
+    duration: 0.6,
+    scrollTrigger: {
+      trigger: ".resumeContainer" ,
+      start: "top center", // Adjust as needed
+      end: "bottom center", // Adjust as needed
+      scrub: 1, // Smoothly updates the animation as you scroll
+    },
+    ease: "power3.out",
+    stagger: 0.2,
+  });
+  
+  gsap.to(entry, {
+    opacity: 1,
+    y: 0,
+    duration: 0.6,
+    scrollTrigger: {
+      trigger: ".resumeContainer" ,
+      start: "top center", // Adjust as needed
+      end: "bottom center", // Adjust as needed
+      scrub: 1, // Smoothly updates the animation as you scroll
+    },
+    ease: "power3.out",
+    stagger: 0.2,
+  });
+};
 const educationData = [
   {
     title: "Master in Computer Engineering",
@@ -59,9 +89,17 @@ const experienceData = [
 
 const Resume = () => {
 
-  
+  useEffect(() => {
+    // Animation for education entries
+    const educationEntries = document.querySelectorAll(".education-entry");
+    animateEntry(educationEntries);
+
+    // Animation for experience entries
+    const experienceEntries = document.querySelectorAll(".experience-entry");
+    animateEntry(experienceEntries);
+  }, []);
   return (
-    <div className="container mx-auto py-8 md:py-20">
+    <div className="container resumeContainer mx-auto py-8 md:py-20">
       <Sechead text="Resume" style={"mx-auto"} />
       <PrimaryHeading
         title={"A Summary of My Resume"}
@@ -74,13 +112,13 @@ const Resume = () => {
               <SubHeading style={"lg:text-[28px]"} title={"My Education"} />
               <div className="border-s-2 border-s-dark-primary ps-4 mt-8 border-dark-primary">
                 {educationData.map((education, index) => (
-                  <div key={index} className="mb-4 border-b pb-6 ">
+                  <div key={index} className="mb-4 border-b pb-6 education-entry ">
                     <SecondaryText
                       title={education.title}
                       style={"font-semibold"}
                     />
                     <SecondaryText
-                      style={"md:text-[17px]  py-2"}
+                      style={"lg:text-[14px] py-2"}
                       title={`${education.institution} / ${education.duration}`}
                     />
                     <PrimaryText title={education.description} />
@@ -97,13 +135,13 @@ const Resume = () => {
 
               <div className="border-l-2 border-l-dark-primary ps-4 mt-8 border-dark-primary">
                 {experienceData.map((experience, index) => (
-                  <div key={index} className="mb-4 border-b pb-6">
+                  <div key={index} className="mb-4 border-b pb-6 experience-entry">
                     <SecondaryText
                       title={experience.title}
                       style={"font-semibold"}
                     />
                     <SecondaryText
-                      style={"md:text-[17px] py-2"}
+                      style={"lg:text-[14px] py-2"}
                       title={`${experience.institution} / ${experience.duration}`}
                     />
                     <PrimaryText title={experience.description} />

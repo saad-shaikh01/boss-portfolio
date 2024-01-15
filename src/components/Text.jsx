@@ -38,7 +38,7 @@ export function PrimaryText(props) {
 export function SecondaryText(props) {
   return (
     <div
-      className={` md:text-[20px] lg:text-[22px] ${props.style}`}
+      className={`md:text-[20px] lg:text-[22px] ${props.style}`}
     >
       {props.title}
     </div>
