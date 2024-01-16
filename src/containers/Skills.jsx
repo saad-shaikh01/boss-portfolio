@@ -133,7 +133,7 @@ function Skills() {
       </div>
 
       <div className='flex justify-center mt-8'>
-        <Button text='Download CV' style='flex justify-center' />
+        <Button text='Load More' style='flex justify-center' />
       </div>
     </div>
   );

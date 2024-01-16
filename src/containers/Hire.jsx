@@ -52,7 +52,7 @@ function Hire() {
           title={'Interested in working with me?'}
         />
         <div className='flex justify-center mt-8'>
-          <Button text='Hire Me !' style='bg-dark-primary flex justify-center' />
+          <a href="#Contact"><Button text='Hire Me !' style='bg-dark-primary flex justify-center' /></a>
         </div>
       </div>
     </div>
