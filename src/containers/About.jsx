@@ -247,7 +247,7 @@ function About() {
         trigger: containerRef.current,
         start: "top center", // Adjust as needed
         end: "bottom center", // Adjust as needed
-        scrub:6, // Smoothly updates the animation as you scroll
+        scrub: 6, // Smoothly updates the animation as you scroll
       },
       ease: "power3.out",
     });
@@ -275,19 +275,19 @@ function About() {
     //   ease: "power3.out",
     // });
 
-      // Scroll-triggered animation for the "22" element
-  gsap.to(experienceNumber, {
-    opacity: 1,
-    y: 0,
-    duration: 1,
-    scrollTrigger: {
-      trigger: containerRef.current,
-      start: "top center", // Adjust as needed
-      end: "bottom center", // Adjust as needed
-      scrub: 1, // Smoothly updates the animation as you scroll
-    },
-    ease: "power3.out",
-  });
+    // Scroll-triggered animation for the "22" element
+    gsap.to(experienceNumber, {
+      opacity: 1,
+      y: 0,
+      duration: 1,
+      scrollTrigger: {
+        trigger: containerRef.current,
+        start: "top center", // Adjust as needed
+        end: "bottom center", // Adjust as needed
+        scrub: 1, // Smoothly updates the animation as you scroll
+      },
+      ease: "power3.out",
+    });
   });
 
   return (
@@ -303,13 +303,13 @@ function About() {
             <h1 className="text-2xl sm:text-4xl pb-2">
               Hi, I'm{" "}
               <span className="font-bold border-b border-b-4  border-dark-primary">
-                Callum Smith
+                Muhammad Ahsan Akram
               </span>
             </h1>
             <SecondaryText
               style={"mx-auto w-[100%]"}
               title={
-                "I'm a designer & developer with a passion for web design. I enjoy developing simple, clean and slick websites that provide real value to the end user. Thousands of clients have procured exceptional results while working with me. Delivering work within time and budget which meets client’s requirements is our moto."
+                "I'm a Tech Entrepreneur, Software Engineer, and Engineering Executive. With a passion for innovation and a deep understanding of technology, I have successfully led numerous Innovation Tech companies and startups to success. As a digital visionary, I constantly stay ahead of the curve, identifying emerging trends and leveraging cutting-edge technologies to drive business growth. With a relentless drive for excellence, I foster a culture of innovation and collaboration within my teams, empowering them to push boundaries and deliver exceptional results. If you're looking for a forward-thinking leader with a strong entrepreneurial spirit and a deep understanding of the digital landscape, I'm here to help you navigate the ever-evolving world of technology and drive your business to new heights."
               }
             />
           </div>
@@ -317,7 +317,7 @@ function About() {
           <div className="w-[100%] lg:w-[40%] text-center">
             <div className="bg-dark-primary flex items-center justify-center w-28 h-28 rounded-full mx-auto">
               <p className="w-[150px] text-[120px] font-bold experience-number opacity-0">
-                22
+                09
               </p>
             </div>
             <h1 className="text-4xl pb-2">
@@ -331,14 +331,14 @@ function About() {
             <PrimaryText style={"font-semibold"} title={"Name:"} />
             <SecondaryHeading
               style={"text-xl font-extrabold sm:text-gray-900"}
-              title={"Callum Smith"}
+              title={"Muhammad Ahsan Akram"}
             />
           </div>
           <div>
             <PrimaryText style={"font-semibold"} title={"Email:"} />
             <SecondaryHeading
               style={"text-xl font-extrabold sm:text-gray-900"}
-              title={"chat@callum.com"}
+              title={"Ahsanakram0611@gmail.com"}
             />
           </div>
           <div>
@@ -352,7 +352,7 @@ function About() {
             <PrimaryText style={"font-semibold"} title={"From:"} />
             <SecondaryHeading
               style={"text-xl font-extrabold sm:text-gray-900"}
-              title={"Los Angeles, USA."}
+              title={"Karachi, Pakistan."}
             />
           </div>
         </div>

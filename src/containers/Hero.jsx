@@ -169,12 +169,12 @@ function Hero() {
               "hero-heading mx-auto pt-4 sm:w-[100%] lg:w-[50%] sm:text-[22px]"
             }
             title={
-              "HELLO! I'M CALLUM SMITH - GRAPHIC DESIGNER, ILLUSTRATOR & ART DIRECTOR."
+              "HELLO! I'M MUHAMMAD AHSAN AKRAM – TECH ENTREPRENEUR, DIGITAL VISIONARY & CHIEF TECHNOLOGY OFFICER."
             }
           />
           <SecondaryText
             style={"secondary-text"}
-            title={"based in Los Angeles, USA."}
+            title={"based in Karachi, Pakistan."}
           />
           <Button style={"btn"} text="About Me" />
 

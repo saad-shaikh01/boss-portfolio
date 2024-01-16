@@ -95,40 +95,75 @@ const Faq = () => {
 
           <FAQItem
             index={0}
-            question="How can i contact you?"
-            answer="You can contact me with the help of the given gmail and contact info"
+            question="What certifications does Muhammad Ahsan Akram hold?"
+            answer="Muhammad Ahsan Akram holds certifications in project management, agile methodologies (Scrum), and technology strategy."
             isOpen={openIndex === 0}
             onToggle={handleToggle}
           />
           <hr className="" />
           <FAQItem
             index={1}
-            question="How can i contact you?"
-            answer="You can contact me with the help of the given gmail and contact info"
+            question="Has Muhammad Ahsan Akram worked with international clients?"
+            answer="Yes, Muhammad Ahsan Akram has experience working with international clients across different continents, including North America, Europe, and Asia."
             isOpen={openIndex === 1}
             onToggle={handleToggle}
           />
           <hr className="" />
           <FAQItem
             index={2}
-            question="How can i contact you?"
-            answer="You can contact me with the help of the given gmail and contact info"
+            question="What is Muhammad Ahsan Akram's approach to problem-solving?"
+            answer="Muhammad Ahsan Akram believes in a structured approach to problem-solving. He analyzes the situation, gathers relevant data, identifies potential solutions, and collaborates with stakeholders to make informed decisions."
             isOpen={openIndex === 2}
             onToggle={handleToggle}
           />
           <hr className="" />
           <FAQItem
             index={3}
-            question="How can i contact you?"
-            answer="You can contact me with the help of the given gmail and contact info"
+            question="Can Muhammad Ahsan Akram provide references or testimonials from previous clients?"
+            answer="Yes, Muhammad Ahsan Akram can provide references or testimonials upon request, showcasing positive feedback and recommendations from previous clients."
             isOpen={openIndex === 3}
             onToggle={handleToggle}
           />
           <hr className="" />
           <FAQItem
             index={4}
-            question="How can i contact you?"
-            answer="You can contact me with the help of the given gmail and contact info"
+            question="How does Muhammad Ahsan Akram ensure effective communication with project stakeholders?"
+            answer="Muhammad Ahsan Akram believes in regular and transparent communication with stakeholders. He conducts frequent project status updates, shares progress reports, and holds meetings to address any concerns or questions."
+            isOpen={openIndex === 4}
+            onToggle={handleToggle}
+          />
+             <hr className="" />
+          <FAQItem
+            index={5}
+            question="Can Muhammad Ahsan Akram provide insights on emerging technologies such as AI and blockchain?"
+            answer="Yes, Muhammad Ahsan Akram keeps himself updated on emerging technologies and can provide insights on their potential applications, benefits, and challenges based on his industry experience and research."
+            isOpen={openIndex === 4}
+            onToggle={handleToggle}
+          />
+
+<hr className="" />
+          <FAQItem
+            index={6}
+            question="How does Muhammad Ahsan Akram ensure project deadlines are met?"
+            answer="Muhammad Ahsan Akram employs effective project management techniques, such as setting realistic timelines, monitoring progress regularly, identifying potential risks, and implementing mitigation strategies to ensure project deadlines are met."
+            isOpen={openIndex === 4}
+            onToggle={handleToggle}
+          />
+
+<hr className="" />
+          <FAQItem
+            index={7}
+            question="What is Muhammad Ahsan Akram's philosophy on continuous learning and professional growth?"
+            answer="Muhammad Ahsan Akram believes in lifelong learning and actively seeks opportunities to enhance his skills and knowledge through attending workshops, participating in industry forums, and pursuing relevant certifications."
+            isOpen={openIndex === 4}
+            onToggle={handleToggle}
+          />
+
+<hr className="" />
+          <FAQItem
+            index={8}
+            question="How does Muhammad Ahsan Akram handle change management in projects?"
+            answer="Muhammad Ahsan Akram understands the importance of change management in projects. He employs a structured approach, involving stakeholders, communicating the benefits, managing resistance, and providing necessary training and support during the transition."
             isOpen={openIndex === 4}
             onToggle={handleToggle}
           />

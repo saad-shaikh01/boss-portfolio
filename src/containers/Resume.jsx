@@ -39,26 +39,33 @@ const animateEntry = (entry) => {
 };
 const educationData = [
   {
-    title: "Master in Computer Engineering",
-    institution: "Harvard University",
-    duration: "2015 - 2017",
+    title: "Master of Science - MS, Computer Science ",
+    institution: "Mohammad Ali Jinnah University (MAJU)",
+    duration: "2020 - 2022",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the dummy text.",
   },
   {
-    title: "Master in Computer Engineering",
-    institution: "Harvard University",
-    duration: "2015 - 2017",
+    title: "Bachelor of Science - BS, Computer Science",
+    institution: "Preston UniversityPreston University",
+    duration: "Jan 2015 - Jan 2019",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the dummy text.",
   },
   {
-    title: "Master in Computer Engineering",
-    institution: "Harvard University",
-    duration: "2015 - 2017",
+    title: "HSC, Pre-Engineering",
+    institution: "Govt Islamia Science College Karachi",
+    duration: "2010 – 2013",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the dummy text.",
   },
+{
+  title: " SSC, Computer Studies",
+  institution: "Brilliant Career Secondary School",
+  duration: "2008 – 2010",
+  description:
+    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the dummy text.",
+},
   // Add more education entries as needed
 ];
 
