@@ -330,28 +330,22 @@ function About() {
           <div>
             <PrimaryText style={"font-semibold"} title={"Name:"} />
             <SecondaryHeading
-              style={"text-xl font-extrabold sm:text-gray-900"}
+              style={"text-lg font-bold sm:text-gray-900"}
               title={"Muhammad Ahsan Akram"}
             />
           </div>
           <div>
             <PrimaryText style={"font-semibold"} title={"Email:"} />
             <SecondaryHeading
-              style={"text-xl font-extrabold sm:text-gray-900"}
+              style={"text-lg font-bold sm:text-gray-900"}
               title={"Ahsanakram0611@gmail.com"}
             />
           </div>
-          <div>
-            <PrimaryText style={"font-semibold"} title={"Date Of Birth"} />
-            <SecondaryHeading
-              style={"text-xl font-extrabold sm:text-gray-900"}
-              title={"11, November 1987"}
-            />
-          </div>
+      
           <div>
             <PrimaryText style={"font-semibold"} title={"From:"} />
             <SecondaryHeading
-              style={"text-xl font-extrabold sm:text-gray-900"}
+              style={"text-lg font-bold sm:text-gray-900"}
               title={"Karachi, Pakistan."}
             />
           </div>
