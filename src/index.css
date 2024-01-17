@@ -125,3 +125,41 @@ z-index: 4;
   cursor: pointer;
   box-shadow: 2px 4px 4px black;
 }
+
+
+
+
+
+
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 80%;
+  width: 60%; 
+  max-height: 80vh;
+  overflow-y: auto; 
+  box-shadow: 5px 5px 10px rgb(223, 213, 213) , inset 1px 1px  50px rgb(223, 213, 213);
+}
+
+.modal-overlay {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.modal-close {
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  font-size: 30px;
+  padding: 5px;
+  cursor: pointer;
+  border: none;
+  color: #000000;
+}
+.modal-close:hover {
+  color: red;
+}
