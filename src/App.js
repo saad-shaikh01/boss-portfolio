@@ -21,14 +21,14 @@ function App() {
       <Navbar />
       <About />
       <Service />
-      <Resume />
-      <Skills />
+       <Resume />
+      {/* <Skills />
       <Works />
       <Hire />
       <TestimonialSlider />
       <Faq />
       <Contact />
-      <Footer />
+      <Footer /> */}
     </div>
   );
 }

@@ -68,7 +68,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { PrimaryHeading, SecondaryText } from "../components/Text";
 import { Icons } from "../assets/icons/icons";
 import videoSrc from "../assets/videos/Header-video.mp4";
-import profile from "../assets/images/profile2.jpg";
+import profile from "../assets/images/profile3.png";
 import Button from "../components/Button";
 
 function Hero() {
@@ -162,11 +162,11 @@ function Hero() {
         <div className="text-center">
           <img
             src={profile}
-            className="profile-image w-36 h-36 rounded-full border border-4 border-[white] mx-auto"
+            className="profile-image bg-[white] w-36 object-cover h-36 rounded-full border border-4 border-[white] mx-auto"
           />
           <PrimaryHeading
             style={
-              "hero-heading mx-auto pt-4 sm:w-[100%] lg:w-[50%] sm:text-[22px]"
+              "hero-heading mx-auto px-4  pt-4 sm:w-[100%] lg:w-[850px] sm:text-[22px]"
             }
             title={
               "HELLO! I'M MUHAMMAD AHSAN AKRAM – TECH ENTREPRENEUR, DIGITAL VISIONARY & CHIEF TECHNOLOGY OFFICER."
@@ -176,7 +176,7 @@ function Hero() {
             style={"secondary-text"}
             title={"based in Karachi, Pakistan."}
           />
-          <Button style={"btn"} text="About Me" />
+          <a href="#Know"><Button style={"btn"} text="About Me" /></a>
 
           <div
             id="arrowIcon"

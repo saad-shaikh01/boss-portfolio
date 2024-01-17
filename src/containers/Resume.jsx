@@ -42,54 +42,71 @@ const educationData = [
     title: "Master of Science - MS, Computer Science ",
     institution: "Mohammad Ali Jinnah University (MAJU)",
     duration: "2020 - 2022",
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the dummy text.",
   },
   {
     title: "Bachelor of Science - BS, Computer Science",
-    institution: "Preston UniversityPreston University",
-    duration: "Jan 2015 - Jan 2019",
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the dummy text.",
+    institution: "Preston University",
+    duration: "2015 - 2019",
   },
   {
     title: "HSC, Pre-Engineering",
     institution: "Govt Islamia Science College Karachi",
     duration: "2010 – 2013",
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the dummy text.",
   },
 {
   title: " SSC, Computer Studies",
   institution: "Brilliant Career Secondary School",
   duration: "2008 – 2010",
-  description:
-    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the dummy text.",
 },
   // Add more education entries as needed
 ];
 
 const experienceData = [
   {
-    title: "Senior Software Engineer",
-    company: "XYZ Corporation",
-    duration: "2018 - Present",
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the dummy text.",
+    title: "Founder & CEO",
+    company: "Asmatech Global",
+    duration: "Full-time Jun 2023 - Present · Karāchi, Sindh, Pakistan ·",
   },
   {
-    title: "Senior Software Engineer",
-    company: "XYZ Corporation",
-    duration: "2018 - Present",
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the dummy text.",
+    title: "Head of Engineering ",
+    company: "Drive Technologies",
+    duration: "Full-time Mar 2023 - Present · 11 Dubai, United Arab Emirates · Hybrid",
   },
   {
-    title: "Senior Software Engineer",
-    company: "XYZ Corporation",
-    duration: "2018 - Present",
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the dummy text.",
+    title: "Head of Quality Assurance",
+    company: "ConvrtX",
+    duration: "Full-time  Nov 2022 - Aug 2023 · Toronto, Ontario, Canada · Remote",
+  },
+  
+  {
+    title: "Senior Quality Assurance Consultant",
+    company: "Systems Limited",
+    duration: "Full-time Jan 2022 - Nov 2022 Karāchi, Sindh, Pakistan",
+  },
+  {
+    title: "Senior Software Quality Assurance Engineer",
+    company: "Arpatech (Pvt) Ltd (Pakistan Official)",
+    duration: "Mar 2019 - Jun 2021 Karachi, PakistanKarachi, Pakistan",
+  },
+  {
+    title: "Technical Executive - SQA & Application Support",
+    company: "(APAG) Agro Processor Atmospheric Gasses Pvt (Ltd)",
+    duration: "Jun 2017 - Mar 2019 karachi, Pakistan",
+  },
+  {
+    title: "Software Quality Assurance Engineer",
+    company: "EfroTech - Intelligent|Business|PEOPLE ",
+    duration: "June 2015 - Jun 2017 · Shahrah-e-Faisal Karachi, Pakistan.",
+  },
+  {
+    title: "Software Quality Assurance Intern Intelligenes ",
+    company: "Oct 2014 - Dec 2014 · Tariq Road, Dilkusha Forum Karachi, Pakistan",
+    duration: "",
+  },
+  {
+    title: "QA Consultant",
+    company: "Jul 2021 - Jan 2022 Karāchi, Sindh, Pakistan",
+    duration: "",
   },
   // Add more experience entries as needed
 ];
@@ -125,7 +142,7 @@ const Resume = () => {
                       style={"font-semibold"}
                     />
                     <SecondaryText
-                      style={"lg:text-[14px] py-2"}
+                      style={"lg:text-lg py-2"}
                       title={`${education.institution} / ${education.duration}`}
                     />
                     <PrimaryText title={education.description} />
@@ -148,8 +165,8 @@ const Resume = () => {
                       style={"font-semibold"}
                     />
                     <SecondaryText
-                      style={"lg:text-[14px] py-2"}
-                      title={`${experience.institution} / ${experience.duration}`}
+                      style={"lg:text-lg py-2"}
+                      title={`${experience.company} / ${experience.duration}`}
                     />
                     <PrimaryText title={experience.description} />
                   </div>

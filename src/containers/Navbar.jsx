@@ -37,10 +37,10 @@ const Navbar = () => {
       {/* Navbar */}
       <nav className="fixed lg:sticky top-0 z-[99] w-[100%]  text-center border-b bg-white justify-between px-4 xl:px-[4rem] flex items-center">
         {/* ...existing code... */}
-        <div className="w-[50%] lg:w-1/4 pt-4">
+        <div className=" lg:w-1/4 pt-4">
          <a href="/"> <PrimaryHeading
             title={"Ahsan Akram"}
-            style={"lg:text-[25px] sm:w-[100%]"}
+            style={"lg:text-[25px] border-b-2 pb-1 b-w-[100px] border-dark-primary font-extrabold lg:w-[190px] sm:w-[220px]"}
           /></a>
         </div>
         <div class="w-2/3 hidden lg:block mx-auto">
