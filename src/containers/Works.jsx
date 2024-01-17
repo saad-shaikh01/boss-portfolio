@@ -51,7 +51,6 @@
 // export default function Works() {
 //   const [currentCategory, setCurrentCategory] = useState("All");
 
-
 //   return (
 //     <div className="bg-[#f8f9fa] py-2 lg:py-[4rem]" id="Work">
 //       <div className="container mx-auto">
@@ -105,12 +104,13 @@
 //     </div>
 //   );
 // }
+
 import React, { useState, useEffect } from "react";
 import { PrimaryHeading } from "../components/Text";
 import Sechead from "../components/Sechead";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-
+import Modal from "react-modal";
 gsap.registerPlugin(ScrollTrigger);
 
 const projects = [
@@ -157,6 +157,7 @@ const categories = ["All", "Category1", "Category2", "Category3", "Category4"];
 
 const Works = () => {
   const [currentCategory, setCurrentCategory] = useState("All");
+  const [selectedProject, setSelectedProject] = useState(null); // Track the selected project for the modal
 
   useEffect(() => {
     // Animation for each project card on scroll
@@ -165,7 +166,7 @@ const Works = () => {
     projectCards.forEach((card) => {
       gsap.from(card, {
         opacity: 0,
-        x: 150, 
+        x: 150,
         scale: 0.5,
         duration: 1,
         ease: "power3.out",
@@ -204,7 +205,13 @@ const Works = () => {
       });
     });
   }, [currentCategory]);
+  const handleProjectClick = (project) => {
+    setSelectedProject(project);
+  };
 
+  const handleCloseModal = () => {
+    setSelectedProject(null);
+  };
   return (
     <div className="bg-[#f8f9fa] py-2 lg:py-[4rem]" id="Work">
       <div className="container mx-auto">
@@ -242,6 +249,7 @@ const Works = () => {
               <div
                 key={index}
                 className="w-[100%] md:w-[30%] my-2 sm:m-4 relative cursor-pointer project-card"
+                onClick={() => handleProjectClick(project)}
               >
                 <img
                   src={project.image}
@@ -255,6 +263,38 @@ const Works = () => {
               </div>
             ))}
         </div>
+
+        <Modal
+          isOpen={selectedProject !== null}
+          onRequestClose={handleCloseModal}
+          contentLabel="Project Modal"
+          className="modal-content"
+          // overlayClassName="project-modal-overlay"
+          closeTimeoutMS={200}
+        >
+          <button className="modal-close" onClick={handleCloseModal}>
+            &times;
+          </button>
+          {selectedProject && (
+            <div className=" flex gap-10 p-4">
+              <img
+                src={selectedProject.image}
+                alt={selectedProject.title}
+                className="w-[30%] h-auto object-cover"
+              />
+              <div>
+                <p>{selectedProject.title}</p>
+                <p>{selectedProject.description}</p>
+                {/* <Button
+                  text="view link "
+                  style="flex justify-center"
+                  
+                /> */}
+                <a href="https://www.youtube.com/" target="blank" >here is projec</a>
+              </div>
+            </div>
+          )}
+        </Modal>
       </div>
     </div>
   );
