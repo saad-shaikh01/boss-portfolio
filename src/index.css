@@ -54,6 +54,10 @@ code {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
+.navLink a.active {
+ background-color: red;
+}
+
 
 /* .slick-dots {
   bottom: 20px;
@@ -99,7 +103,7 @@ code {
   border-color: #fdd835; 
 } 
 
-.slick-prev,
+/* .slick-prev,
 .slick-next {
   display: none;
 }
@@ -107,7 +111,7 @@ code {
 .slick-slider:hover .slick-prev,
 .slick-slider:hover .slick-next {
   display: block !important;
-}
+} */
 
 
 /* ScrollToTopButton.css */

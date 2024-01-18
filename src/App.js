@@ -12,23 +12,25 @@ import Footer from "./containers/Footer";
 import Works from "./containers/Works";
 import Navbar from "./containers/Navbar";
 import TopButton from "./components/TopButton";
+import Upwork from "./containers/Upwork";
 
 function App() {
   return (
     <div>
-      <TopButton/>
+      {/* <TopButton />
       <Hero />
       <Navbar />
       <About />
       <Service />
-       <Resume />
-      {/* <Skills />
+      <Resume />
+      <Skills />
       <Works />
       <Hire />
-      <TestimonialSlider />
       <Faq />
       <Contact />
-      <Footer /> */}
+    <Footer /> */}
+    {/* <TestimonialSlider /> */}
+      <Upwork />
     </div>
   );
 }
