@@ -24,13 +24,13 @@ const testimonialData = [
   },
   {
     content:
-      "Muhammad was a great asset to finish my project. He was very dedicated to get to the ins & outs of my expectations & delivered accordingly.",
+      "Muhammad Ahsan Akram was a great asset to finish my project. He was very dedicated to get to the ins & outs of my expectations & delivered accordingly.",
     clientName: "Ekrem Gencaslan",
     designation: "Germany",
   },
   {
     content:
-      "It was a really good experience working with Ahsan! He was exceptional at his work ! Delivered the requirement quick and perfect! Looking forward to working with him..",
+      "It was a really good experience working with Muhammad Ahsan Akram! He was exceptional at his work ! Delivered the requirement quick and perfect! Looking forward to working with him..",
     clientName: "Carl Vagfelt Nihlmar",
     designation: "USA",
   },
@@ -44,14 +44,14 @@ const testimonialData = [
 
   {
     content:
-      "Thank You, Muhammad, For completing the SQL exercise review early and being communicative throughout the project.",
+      "Thank You, Muhammad Ahsan Akram, For completing the SQL exercise review early and being communicative throughout the project.",
     clientName: "Audrey Espey",
     designation: "USA",
   },
 
   {
     content:
-      "Thank You Ahsan Akram , for helping us with this project. You have been a great help to us in this project. He patiently cleared all the doubts.",
+      "Thank You Muhammad Ahsan Akram , for helping us with this project. You have been a great help to us in this project. He patiently cleared all the doubts.",
     clientName: "Nisha Bhatt",
     designation: "India",
   },
@@ -132,11 +132,11 @@ const TestimonialSlider = () => {
                 <div className="ml-4">
                   <PrimaryText
                     title={testimonial.clientName}
-                    style={"font-semibold text-[10px] text-white"}
+                    style={"font-semibold text-[19px] lg:text-[wheat] text-[wheat]"}
                   />
                   <PrimaryText
                     title={testimonial.designation}
-                    style={"text-white  text-[9px]"}
+                    style={"text-white  text-[15px]"}
                   />
                 </div>
               </div>

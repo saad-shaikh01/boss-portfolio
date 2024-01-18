@@ -1,5 +1,5 @@
 import { faTwitter, faLinkedin, faGithub, faFacebook, faInstagram, faConnectdevelop, faDigitalOcean } from '@fortawesome/free-brands-svg-icons';
-import { faPlus, faArrowDown, faLaptopCode, faPaintBrush, faMobileAlt, faBars, faArrowUp, faClose, faHeadset, faMicrochip, faPeopleGroup, faArrowsSplitUpAndLeft } from '@fortawesome/free-solid-svg-icons';
+import { faPlus, faArrowDown, faLaptopCode, faPaintBrush, faMobileAlt, faBars, faArrowUp, faClose, faHeadset, faMicrochip, faPeopleGroup, faArrowsSplitUpAndLeft, faListCheck, faPenNib } from '@fortawesome/free-solid-svg-icons';
 
 export const Icons = {
   Twitter: faTwitter,
@@ -20,5 +20,7 @@ export const Icons = {
   ArrowUp: faArrowUp,
   Close: faClose,
   PeopleGroup: faPeopleGroup, // First custom icon
-  ArrowsSplitUpAndLeft: faArrowsSplitUpAndLeft // Second custom icon
+  ArrowsSplitUpAndLeft: faArrowsSplitUpAndLeft, // Second custom icon
+  ListCheck: faListCheck, // Third custom icon
+  PenNib: faPenNib // Fourth custom icon
 };

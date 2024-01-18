@@ -115,13 +115,13 @@ gsap.registerPlugin(ScrollTrigger);
 
 const projects = [
   {
-    category: "Category2",
+    category: "Category1",
     image: `${require("../assets/images/portfolio/project-1.jpg")}`,
     title: "Project 1",
     description: "Description 1",
   },
   {
-    category: "Category2",
+    category: "Category1",
     image: `${require("../assets/images/portfolio/project-2.jpg")}`,
     title: "Project 2",
     description: "Description 2",
@@ -133,7 +133,7 @@ const projects = [
     description: "Description 3",
   },
   {
-    category: "Category4",
+    category: "Category1",
     image: `${require("../assets/images/portfolio/project-4.jpg")}`,
     title: "Project 1",
     description: "Description 1",
@@ -145,7 +145,7 @@ const projects = [
     description: "Description 2",
   },
   {
-    category: "Category3",
+    category: "Category1",
     image: `${require("../assets/images/portfolio/project-6.jpg")}`,
     title: "Project 3",
     description: "Description 3",

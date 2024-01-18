@@ -33,7 +33,7 @@ const servicesData = [
       "With his experience as an entrepreneur and technology leader, Muhammad provides leadership and mentoring services to help businesses and individuals navigate the complexities of the digital world. He can offer guidance on strategic decision-making, team management, and fostering a culture of innovation.",
   },
   {
-    icon: Icons.webDevelopment,
+    icon: Icons.PenNib,
     title: "Consulting and Advisory",
     description:
       "Muhammad Ahsan offers consulting and advisory services to businesses seeking expert insights and guidance in areas such as technology adoption, digital marketing strategies, cybersecurity, and IT infrastructure planning.",
@@ -51,7 +51,7 @@ const servicesData = [
       "Muhammad Ahsan follows agile development methodologies to ensure efficient and iterative software development. By embracing agile principles, he can adapt to changing requirements, foster collaboration, and deliver high-quality software within shorter development cycles.",
   },
   {
-    icon: Icons.mobileApp,
+    icon: Icons.ListCheck,
     title: "Quality Assurance and Testing",
     description:
       "Muhammad Ahsan understands the importance of delivering bug-free and reliable software. He employs rigorous quality assurance and testing practices to identify and resolve any issues during the development process, ensuring that the final product meets the highest standards of quality.",

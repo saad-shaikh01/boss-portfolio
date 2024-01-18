@@ -248,13 +248,13 @@ const Navbar = () => {
       {/* Navbar */}
       <nav className="fixed lg:sticky top-0 z-[99] w-[100%]  text-center border-b bg-white justify-between px-4 xl:px-[4rem] flex items-center">
         {/* ...existing code... */}
-        <div className=" lg:w-1/4 pt-4">
+        <div className="pt-4">
           <a href="/">
             {" "}
             <PrimaryHeading
-              title={"Ahsan Akram"}
+              title={"Muhammad Ahsan Akram"}
               style={
-                "lg:text-[25px] border-b-2 pb-1 b-w-[100px] border-dark-primary font-extrabold lg:w-[190px] sm:w-[220px]"
+                "lg:text-[20px] border-b-2  sm:w-[450px] lg:w-[280px] pb-1 b-w-[100px] border-dark-primary font-extrabold "
               }
             />
           </a>
@@ -265,8 +265,8 @@ const Navbar = () => {
               <a
                 key={title}
                 href={url}
-                className={`block mt-4 font-semibold lg:inline-block lg:text-[15px] xl:text-[18px] ${
-                  title === activeLink ? "text-black bg-black text-white" : ""
+                className={`block mt-4 font-semibold lg:inline-block lg:text-[15px] ${
+                  title === activeLink ? "text-black bg-dark-primary px-2  text-white" : ""
                 } lg:mt-0  mr-4 xl:mr-8`}
                 onClick={() => setActiveLink(title)}
               >
