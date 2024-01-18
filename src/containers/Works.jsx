@@ -116,7 +116,7 @@ gsap.registerPlugin(ScrollTrigger);
 const projects = [
   {
     category: "Category1",
-    image: `${require("../assets/images/portfolio/project-1.jpg")}`,
+    image: `${require("../assets/images/portfolio/App1.png")}`,
     title: "Project 1",
     description: "Description 1",
   },
