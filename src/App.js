@@ -22,13 +22,13 @@ function App() {
       <About />
       <Service />
        <Resume />
-      {/* <Skills />
+       <Skills />
       <Works />
       <Hire />
       <TestimonialSlider />
       <Faq />
       <Contact />
-      <Footer /> */}
+      <Footer /> 
     </div>
   );
 }

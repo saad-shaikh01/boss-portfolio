@@ -67,7 +67,7 @@ import { gsap } from "gsap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { PrimaryHeading, SecondaryText } from "../components/Text";
 import { Icons } from "../assets/icons/icons";
-import videoSrc from "../assets/videos/Header-video.mp4";
+import videoSrc from "../assets/videos/Asmatech Global Video 1.mp4";
 import profile from "../assets/images/profile3.png";
 import Button from "../components/Button";
 
@@ -162,7 +162,7 @@ function Hero() {
         <div className="text-center">
           <img
             src={profile}
-            className="profile-image bg-[white] w-36 object-cover h-36 rounded-full border border-4 border-[white] mx-auto"
+            className="profile-image w-36 object-cover h-36 rounded-full border border-4 border-[white] mx-auto"
           />
           <PrimaryHeading
             style={
