@@ -83,10 +83,10 @@ function Contact() {
           <SubHeading title={"Living In:"} />
           <SecondaryText
             style={""}
-            title={"30 Shacham street, Los Angeles, USA."}
+            title={"Karāchi, Sindh, Pakistan"}
           />
           <SubHeading title={"Call:"} style={"pt-6"} />
-          <SecondaryText style={""} title={"(+060) 444 434 444"} />
+          <SecondaryText style={""} title={"+92 333-0379431"} />
 
                     <div className='contact-content-sociallinks flex gap-8 mt-16'>
                         <FontAwesomeIcon icon={Icons.Twitter} className='ease-in-out duration-500 hover:-translate-y-2 cursor-pointer text-black text-2xl' />
