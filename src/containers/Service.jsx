@@ -9,25 +9,25 @@ import Sechead from "../components/Sechead";
 gsap.registerPlugin(ScrollTrigger);
 const servicesData = [
   {
-    icon: Icons.uiUxDesign,
+    icon: Icons. Microchip,
     title: "Technology Strategy",
     description:
       "Muhammad Ahsan can help businesses develop a comprehensive technology strategy that aligns with their goals and objectives. This includes identifying opportunities for digital transformation, implementing innovative technologies, and optimizing existing systems.",
   },
   {
-    icon: Icons.webDevelopment,
+    icon: Icons.ConnectDevelop,
     title: "Product Development",
     description:
       "With his expertise in product development, Muhammad can assist businesses in conceptualizing and creating innovative digital products that meet market demands. He can guide the entire product development lifecycle, from ideation and prototyping to testing and launch.",
   },
   {
-    icon: Icons.mobileApp,
+    icon: Icons.DigitalOcean,
     title: "Digital Transformation",
     description:
       "Muhammad Ahsan understands the importance of digital transformation in today's business environment. He can help businesses embrace digital technologies, streamline operations, and enhance customer experiences through the implementation of digital solutions such as cloud computing, data analytics, and artificial intelligence.",
   },
   {
-    icon: Icons.uiUxDesign,
+    icon: Icons.PeopleGroup,
     title: "Leadership and Mentoring",
     description:
       "With his experience as an entrepreneur and technology leader, Muhammad provides leadership and mentoring services to help businesses and individuals navigate the complexities of the digital world. He can offer guidance on strategic decision-making, team management, and fostering a culture of innovation.",
@@ -39,16 +39,16 @@ const servicesData = [
       "Muhammad Ahsan offers consulting and advisory services to businesses seeking expert insights and guidance in areas such as technology adoption, digital marketing strategies, cybersecurity, and IT infrastructure planning.",
   },
   {
-    icon: Icons.mobileApp,
+    icon: Icons.webDevelopment,
     title: "Full-Stack Development",
     description:
       "Muhammad Ahsan has expertise in both front-end and back-end development, enabling him to create end-to-end software solutions. From user interface design and development to server-side programming and database integration, he can build comprehensive applications that deliver a seamless user experience.",
   },
   {
-    icon: Icons.mobileApp,
+    icon: Icons. ArrowsSplitUpAndLeft,
     title: "Agile Development Methodologies",
     description:
-      ": Muhammad Ahsan follows agile development methodologies to ensure efficient and iterative software development. By embracing agile principles, he can adapt to changing requirements, foster collaboration, and deliver high-quality software within shorter development cycles.",
+      "Muhammad Ahsan follows agile development methodologies to ensure efficient and iterative software development. By embracing agile principles, he can adapt to changing requirements, foster collaboration, and deliver high-quality software within shorter development cycles.",
   },
   {
     icon: Icons.mobileApp,
@@ -57,7 +57,7 @@ const servicesData = [
       "Muhammad Ahsan understands the importance of delivering bug-free and reliable software. He employs rigorous quality assurance and testing practices to identify and resolve any issues during the development process, ensuring that the final product meets the highest standards of quality.",
   },
   {
-    icon: Icons.mobileApp,
+    icon: Icons.Headset,
     title: "Maintenance and Support",
     description:
       "After the software is deployed, Muhammad provides ongoing maintenance and support services to ensure the smooth operation of the application. This includes bug fixes, updates, and enhancements to keep the software up-to-date and optimized.",

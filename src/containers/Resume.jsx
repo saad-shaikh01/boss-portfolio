@@ -84,6 +84,11 @@ const experienceData = [
     duration: "Full-time Jan 2022 - Nov 2022 Karāchi, Sindh, Pakistan",
   },
   {
+    title: "QA Consultant",
+    company: "Systems Limited",
+    duration: "Jul 2021 - Jan 2022 Karāchi, Sindh, Pakistan",
+  },
+  {
     title: "Senior Software Quality Assurance Engineer",
     company: "Arpatech (Pvt) Ltd (Pakistan Official)",
     duration: "Mar 2019 - Jun 2021 Karachi, PakistanKarachi, Pakistan",
@@ -103,11 +108,7 @@ const experienceData = [
     company: "Oct 2014 - Dec 2014 · Tariq Road, Dilkusha Forum Karachi, Pakistan",
     duration: "",
   },
-  {
-    title: "QA Consultant",
-    company: "Jul 2021 - Jan 2022 Karāchi, Sindh, Pakistan",
-    duration: "",
-  },
+
   // Add more experience entries as needed
 ];
 

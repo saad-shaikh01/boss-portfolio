@@ -86,12 +86,12 @@ const Faq = () => {
   }, []);
   return (
     <div className='bg-[#f8f9fa] py-10'>
-    <div className='container py-10 md:py-20 mx-auto md:flex-nowrap flex-wrap gap-12 flex items-center justify-between'>
+      <div className='container py-10 md:py-20 mx-auto md:flex-nowrap flex-wrap gap-12 flex items-center justify-between'>
 
 
-<div className='lg:w-[60%] w-[100%]'>
-<Sechead text="FAQ" style={"xl:mx-[0px] lg:mx-[0px] mb-4"}/>
-<PrimaryHeading style={"w-[100%] sm:w-[100%] pb-10"}  title={"Have any questions?"} />
+        <div className='lg:w-[60%] w-[100%]'>
+          <Sechead text="FAQ" style={"xl:mx-[0px] lg:mx-[0px] mb-4"} />
+          <PrimaryHeading style={"w-[100%] sm:w-[100%] pb-10"} title={"Have any questions?"} />
 
           <FAQItem
             index={0}
@@ -132,41 +132,51 @@ const Faq = () => {
             isOpen={openIndex === 4}
             onToggle={handleToggle}
           />
-             <hr className="" />
+          <hr className="" />
           <FAQItem
             index={5}
-            question="Can Muhammad Ahsan Akram provide insights on emerging technologies such as AI and blockchain?"
-            answer="Yes, Muhammad Ahsan Akram keeps himself updated on emerging technologies and can provide insights on their potential applications, benefits, and challenges based on his industry experience and research."
-            isOpen={openIndex === 4}
+            question="What is Muhammad Ahsan Akram's approach to team collaboration?"
+            answer="Muhammad Ahsan Akram promotes a collaborative and inclusive work environment. He encourages open communication, fosters teamwork, and values diverse perspectives to drive innovation and achieve project success."
+            isOpen={openIndex === 5}
             onToggle={handleToggle}
           />
 
-<hr className="" />
+          <hr className="" />
           <FAQItem
             index={6}
-            question="How does Muhammad Ahsan Akram ensure project deadlines are met?"
-            answer="Muhammad Ahsan Akram employs effective project management techniques, such as setting realistic timelines, monitoring progress regularly, identifying potential risks, and implementing mitigation strategies to ensure project deadlines are met."
-            isOpen={openIndex === 4}
+            question="Can Muhammad Ahsan Akram provide insights on emerging technologies such as AI and blockchain?"
+            answer="Yes, Muhammad Ahsan Akram keeps himself updated on emerging technologies and can provide insights on their potential applications, benefits, and challenges based on his industry experience and research."
+            isOpen={openIndex === 6}
             onToggle={handleToggle}
           />
 
-<hr className="" />
+          <hr className="" />
           <FAQItem
             index={7}
-            question="What is Muhammad Ahsan Akram's philosophy on continuous learning and professional growth?"
-            answer="Muhammad Ahsan Akram believes in lifelong learning and actively seeks opportunities to enhance his skills and knowledge through attending workshops, participating in industry forums, and pursuing relevant certifications."
-            isOpen={openIndex === 4}
+            question="How does Muhammad Ahsan Akram ensure project deadlines are met?"
+            answer="Muhammad Ahsan Akram employs effective project management techniques, such as setting realistic timelines, monitoring progress regularly, identifying potential risks, and implementing mitigation strategies to ensure project deadlines are met."
+            isOpen={openIndex === 7}
             onToggle={handleToggle}
           />
 
-<hr className="" />
+          <hr className="" />
           <FAQItem
             index={8}
-            question="How does Muhammad Ahsan Akram handle change management in projects?"
-            answer="Muhammad Ahsan Akram understands the importance of change management in projects. He employs a structured approach, involving stakeholders, communicating the benefits, managing resistance, and providing necessary training and support during the transition."
-            isOpen={openIndex === 4}
+            question="What is Muhammad Ahsan Akram's philosophy on continuous learning and professional growth?"
+            answer="Muhammad Ahsan Akram believes in lifelong learning and actively seeks opportunities to enhance his skills and knowledge through attending workshops, participating in industry forums, and pursuing relevant certifications."
+            isOpen={openIndex === 8}
             onToggle={handleToggle}
           />
+
+          <hr className="" />
+          <FAQItem
+            index={9}
+            question="How does Muhammad Ahsan Akram handle change management in projects?"
+            answer="Muhammad Ahsan Akram understands the importance of change management in projects. He employs a structured approach, involving stakeholders, communicating the benefits, managing resistance, and providing necessary training and support during the transition."
+            isOpen={openIndex === 9}
+            onToggle={handleToggle}
+          />
+
           {/* Add more FAQ items as needed */}
         </div>
 

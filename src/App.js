@@ -17,20 +17,20 @@ import Upwork from "./containers/Upwork";
 function App() {
   return (
     <div>
-      {/* <TopButton />
+      <TopButton />
       <Hero />
       <Navbar />
       <About />
       <Service />
       <Resume />
       <Skills />
+      <Upwork />
       <Works />
+      <TestimonialSlider />
       <Hire />
       <Faq />
       <Contact />
-    <Footer /> */}
-    {/* <TestimonialSlider /> */}
-      <Upwork />
+      <Footer />
     </div>
   );
 }

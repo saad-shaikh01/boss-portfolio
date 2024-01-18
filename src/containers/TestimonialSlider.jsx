@@ -11,24 +11,49 @@ gsap.registerPlugin(ScrollTrigger);
 const testimonialData = [
   {
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.",
-    clientName: "John Doe",
-    designation: "CEO, Company XYZ",
-    image: `${require("../assets/images/profile2.jpg")}`, // Replace with image URL or path
+      "he was very knowledgeable and good at explaining concepts, was available when I need help, it was nice working with him, will definitely rehire",
+    clientName: "Jade Hu",
+    designation: "Canada",
+ // Replace with image URL or path
   },
   {
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.",
-    clientName: "John Doe",
-    designation: "CEO, Company XYZ",
-    image: `${require("../assets/images/profile2.jpg")}`, // Replace with image URL or path
+      "Freelancer completed an urgent task on time and successfully. Definitely recommended and will hire again if needed for future projects.",
+    clientName: "Karina T",
+    designation: "USA",
   },
   {
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a anteLorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante..",
-    clientName: "John Doe",
-    designation: "CEO, Company XYZ",
-    image: `${require("../assets/images/profile2.jpg")}`, // Replace with image URL or path
+      "Muhammad was a great asset to finish my project. He was very dedicated to get to the ins & outs of my expectations & delivered accordingly.",
+    clientName: "Ekrem Gencaslan",
+    designation: "Germany",
+  },
+  {
+    content:
+      "It was a really good experience working with Ahsan! He was exceptional at his work ! Delivered the requirement quick and perfect! Looking forward to working with him..",
+    clientName: "Carl Vagfelt Nihlmar",
+    designation: "USA",
+  },
+
+  {
+    content:
+      "Muhammad Ahsan Akram has done a great job on the work. he is very responsive. He takes our Feedback and update the work.",
+    clientName: "Marie Kerrin",
+    designation: "Singapore",
+  },
+
+  {
+    content:
+      "Thank You, Muhammad, For completing the SQL exercise review early and being communicative throughout the project.",
+    clientName: "Audrey Espey",
+    designation: "USA",
+  },
+
+  {
+    content:
+      "Thank You Ahsan Akram , for helping us with this project. You have been a great help to us in this project. He patiently cleared all the doubts.",
+    clientName: "Nisha Bhatt",
+    designation: "India",
   },
 ];
 
@@ -104,13 +129,6 @@ const TestimonialSlider = () => {
                 style={"lg:w-[90%] mx-auto text-white"}
               />
               <div className="flex justify-center items-center my-4 ">
-                <div className="rounded-full overflow-hidden h-16 w-16 flex-shrink-0">
-                  <img
-                    src={testimonial.image}
-                    alt={testimonial.clientName}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
                 <div className="ml-4">
                   <PrimaryText
                     title={testimonial.clientName}
