@@ -9,7 +9,7 @@ import Sechead from "../components/Sechead";
 gsap.registerPlugin(ScrollTrigger);
 const servicesData = [
   {
-    icon: Icons. Microchip,
+    icon: Icons.Microchip,
     title: "Technology Strategy",
     description:
       "Muhammad Ahsan can help businesses develop a comprehensive technology strategy that aligns with their goals and objectives. This includes identifying opportunities for digital transformation, implementing innovative technologies, and optimizing existing systems.",
@@ -45,7 +45,7 @@ const servicesData = [
       "Muhammad Ahsan has expertise in both front-end and back-end development, enabling him to create end-to-end software solutions. From user interface design and development to server-side programming and database integration, he can build comprehensive applications that deliver a seamless user experience.",
   },
   {
-    icon: Icons. ArrowsSplitUpAndLeft,
+    icon: Icons.ArrowsSplitUpAndLeft,
     title: "Agile Development Methodologies",
     description:
       "Muhammad Ahsan follows agile development methodologies to ensure efficient and iterative software development. By embracing agile principles, he can adapt to changing requirements, foster collaboration, and deliver high-quality software within shorter development cycles.",
@@ -65,37 +65,6 @@ const servicesData = [
 ];
 
 const Service = () => {
-  useEffect(() => {
-    // Animation Logic
-    gsap.utils.toArray(".service-item").forEach((item, index) => {
-      gsap.from(item, {
-        opacity: 0,
-        y: 50,
-        scale: 0.5,
-        rotation: -45,
-        duration: 0.5,
-        stagger: 0.2,
-        // ease: "power3.out", // Experiment with different easing functions
-        ease: "elastic.out(1, 0.3)", // Experiment with different easing functions
-      });
-
-      gsap.to(item, {
-        opacity: 1,
-        y: 0,
-        scale: 1,
-        rotation: 0,
-        duration: 1,
-        scrollTrigger: {
-          trigger: item,
-          start: "top 95%",
-          end: "bottom 96%",
-          scrub: 6,
-        },
-        ease: "power3.out", // Use the same easing function for consistency
-      });
-    });
-  }, []);
-
   return (
     <div className="bg-[#f8f9fa] py-10 md:py-20" id="Service">
       <div className="container mx-auto py-8">
@@ -112,7 +81,16 @@ const Service = () => {
               className="w-full sm:w-1/2 lg:w-1/3 px-4 mt-2rem lg:mt-[4rem] service-item"
               style={{ display: "flex", flexDirection: "column" }}
             >
-              <div className="mb-4 bg-white p-6 text-center rounded-lg shadow-md flex-grow">
+              <div
+                data-aos={
+                  index === 0
+                    ? "fade-right"
+                    : index === 2
+                    ? "fade-left"
+                    : "fade-up"
+                } 
+                className=" mb-4 bg-white p-6 text-center rounded-lg shadow-md flex-grow"
+              >
                 <div className="text-5xl mb-4 text-center text-dark-primary">
                   <FontAwesomeIcon icon={service.icon} />
                 </div>
@@ -128,3 +106,34 @@ const Service = () => {
 };
 
 export default Service;
+
+// useEffect(() => {
+//   // Animation Logic
+//   gsap.utils.toArray(".service-item").forEach((item, index) => {
+//     gsap.from(item, {
+//       opacity: 0,
+//       y: 50,
+//       scale: 0.5,
+//       rotation: -45,
+//       duration: 0.5,
+//       stagger: 0.2,
+//       // ease: "power3.out", // Experiment with different easing functions
+//       ease: "elastic.out(1, 0.3)", // Experiment with different easing functions
+//     });
+
+//     gsap.to(item, {
+//       opacity: 1,
+//       y: 0,
+//       scale: 1,
+//       rotation: 0,
+//       duration: 1,
+//       scrollTrigger: {
+//         trigger: item,
+//         start: "top 95%",
+//         end: "bottom 96%",
+//         scrub: 6,
+//       },
+//       ease: "power3.out", // Use the same easing function for consistency
+//     });
+//   });
+// }, []);

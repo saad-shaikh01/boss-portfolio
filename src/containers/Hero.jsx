@@ -75,79 +75,7 @@ function Hero() {
   useEffect(() => {
     const icon = document.getElementById("arrowIcon");
     icon.classList.add("opacity-100", "animate-bounce");
-
-    // Animation for the hero heading
-    gsap.from(".profile-image", {
-      opacity: 0,
-      y: -80,
-      duration: 1,
-      delay: 0.5,
-      ease: "power3.out",
-    });
-    gsap.from(".hero-heading", {
-      opacity: 0,
-      scale: 0.5,
-      duration: 1,
-      delay: 0.5,
-      ease: "power3.out",
-    });
-
-    // Animation for the secondary heading
-    gsap.from(".secondary-text", {
-      opacity: 0,
-      y: 50,
-      duration: 1,
-      delay: 1,
-      ease: "power3.out",
-      stagger: 0.2, // Staggered animation for a dynamic effect
-    });
-
-    // Animation for the button
-    gsap.from(".btn", {
-      opacity: 0,
-      // x: 50,
-      duration: 1,
-      delay: 1,
-      // ease: "power3.out",
-      // stagger: 0.2,
-    });
-
-    // Animation for the hero heading
-    gsap.to(".profile-image", {
-      opacity: 1,
-      y: 0,
-      duration: 1,
-      delay: 0.5,
-      ease: "power3.out",
-    });
-    gsap.to(".hero-heading", {
-      opacity: 1,
-      // y: 0,
-      scale: 1, 
-      duration: 1,
-      delay: 0.5,
-      ease: "power3.out",
-    });
-
-    // Animation for the secondary heading
-    gsap.to(".secondary-text", {
-      opacity: 1,
-      y: 0,
-      duration: 1,
-      delay: 1,
-      ease: "power3.out",
-    });
-
-    // Animation for the button
-    gsap.to(".btn", {
-      opacity: 1,
-      // x: 0,
-      duration: 1,
-      delay: 1,
-      ease: "power3.out",
-    });
   }, []);
-
   return (
     <div className="relative h-[120vh] lg:h-[100vh]">
       {/* Video */}
@@ -161,6 +89,7 @@ function Hero() {
       <div className="absolute inset-0 flex items-center justify-center bg-dark-primary bg-opacity-90">
         <div className="text-center">
           <img
+            data-aos="fade-down"
             src={profile}
             className="profile-image w-36 object-cover h-36 rounded-full border border-4 border-[white] mx-auto"
           />
@@ -176,7 +105,9 @@ function Hero() {
             style={"secondary-text"}
             title={"based in Karachi, Pakistan."}
           />
-          <a href="#Know"><Button style={"btn"} text="About Me" /></a>
+          <a href="#Know">
+            <Button  style={"btn"} text="About Me" />
+          </a>
 
           <div
             id="arrowIcon"
@@ -198,3 +129,79 @@ function Hero() {
 }
 
 export default Hero;
+
+// useEffect(() => {
+//   const icon = document.getElementById("arrowIcon");
+//   icon.classList.add("opacity-100", "animate-bounce");
+
+//   // Animation for the hero heading
+//   gsap.from(".profile-image", {
+//     opacity: 0,
+//     y: -80,
+//     duration: 1,
+//     delay: 0.5,
+//     ease: "power3.out",
+//   });
+//   gsap.from(".hero-heading", {
+//     opacity: 0,
+//     scale: 0.5,
+//     duration: 1,
+//     delay: 0.5,
+//     ease: "power3.out",
+//   });
+
+//   // Animation for the secondary heading
+//   gsap.from(".secondary-text", {
+//     opacity: 0,
+//     y: 50,
+//     duration: 1,
+//     delay: 1,
+//     ease: "power3.out",
+//     stagger: 0.2, // Staggered animation for a dynamic effect
+//   });
+
+//   // Animation for the button
+//   gsap.from(".btn", {
+//     opacity: 0,
+//     // x: 50,
+//     duration: 1,
+//     delay: 1,
+//     // ease: "power3.out",
+//     // stagger: 0.2,
+//   });
+
+//   // Animation for the hero heading
+//   gsap.to(".profile-image", {
+//     opacity: 1,
+//     y: 0,
+//     duration: 1,
+//     delay: 0.5,
+//     ease: "power3.out",
+//   });
+//   gsap.to(".hero-heading", {
+//     opacity: 1,
+//     // y: 0,
+//     scale: 1,
+//     duration: 1,
+//     delay: 0.5,
+//     ease: "power3.out",
+//   });
+
+//   // Animation for the secondary heading
+//   gsap.to(".secondary-text", {
+//     opacity: 1,
+//     y: 0,
+//     duration: 1,
+//     delay: 1,
+//     ease: "power3.out",
+//   });
+
+//   // Animation for the button
+//   gsap.to(".btn", {
+//     opacity: 1,
+//     // x: 0,
+//     duration: 1,
+//     delay: 1,
+//     ease: "power3.out",
+//   });
+// }, []);

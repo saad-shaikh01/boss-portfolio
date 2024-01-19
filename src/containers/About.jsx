@@ -216,82 +216,10 @@ import {
 gsap.registerPlugin(ScrollTrigger);
 
 function About() {
-  const containerRef = useRef(null);
 
-  useGSAP(() => {
-    const primaryHeading = containerRef.current.querySelector(".PrimaryHeading");
-    const aboutContent = containerRef.current.querySelector(".About-content");
-    const aboutContent2 = containerRef.current.querySelector(".About-content2");
-    const experienceNumber = containerRef.current.querySelector(".experience-number");
-
-    gsap.from(primaryHeading, {
-      y: 50,
-      opacity: 0,
-      duration: 1,
-      stagger: 0.3,
-      scrollTrigger: {
-        trigger: containerRef.current,
-        start: "top 95%",
-        end: "bottom 96%",
-        scrub: 6,
-      },
-      ease: "power3.out",
-    });
-
-    gsap.from(aboutContent, {
-      opacity: 0,
-      x: -50,
-      duration: 2,
-      delay: 2.5,
-      scrollTrigger: {
-        trigger: containerRef.current,
-        start: "top center", // Adjust as needed
-        end: "bottom center", // Adjust as needed
-        scrub: 6, // Smoothly updates the animation as you scroll
-      },
-      ease: "power3.out",
-    });
-
-    gsap.from(aboutContent2.children, {
-      opacity: 0,
-      y: 30,
-      duration: 1,
-      scrollTrigger: {
-        trigger: containerRef.current,
-        start: "top center", // Adjust as needed
-        end: "bottom center", // Adjust as needed
-        scrub: 1, // Smoothly updates the animation as you scroll
-      },
-      stagger: 0.2,
-      ease: "power3.out",
-    });
-
-    // Animate the "22" with a delay after other animations
-    // gsap.to(experienceNumber, {
-    //   opacity: 1,
-    //   y: 0,
-    //   duration: 1,
-    //   delay: 2, // Adjust the delay as needed
-    //   ease: "power3.out",
-    // });
-
-    // Scroll-triggered animation for the "22" element
-    gsap.to(experienceNumber, {
-      opacity: 1,
-      y: 0,
-      duration: 1,
-      scrollTrigger: {
-        trigger: containerRef.current,
-        start: "top center", // Adjust as needed
-        end: "bottom center", // Adjust as needed
-        scrub: 1, // Smoothly updates the animation as you scroll
-      },
-      ease: "power3.out",
-    });
-  });
 
   return (
-    <div className="container mx-auto my-12 md:my-20" id="Know" ref={containerRef}>
+    <div className="container mx-auto my-12 md:my-20" id="Know" >
       <div>
         <PrimaryHeading
           style={"mx-auto sm:w-[100%] text-start lg:text-center w-[100%]"}
@@ -314,7 +242,7 @@ function About() {
             />
           </div>
 
-          <div className="w-[100%] lg:w-[40%] text-center">
+          <div data-aos="fade-out" className="w-[100%] lg:w-[40%] text-center">
             <div className="bg-dark-primary flex items-center justify-center w-28 h-28 rounded-full mx-auto">
               <p className="w-[150px] text-[120px] font-bold experience-number opacity-0">
                 09
@@ -356,3 +284,79 @@ function About() {
 }
 
 export default About;
+
+
+
+  // const containerRef = useRef(null);
+
+  // useGSAP(() => {
+  //   const primaryHeading = containerRef.current.querySelector(".PrimaryHeading");
+  //   const aboutContent = containerRef.current.querySelector(".About-content");
+  //   const aboutContent2 = containerRef.current.querySelector(".About-content2");
+  //   const experienceNumber = containerRef.current.querySelector(".experience-number");
+
+  //   gsap.from(primaryHeading, {
+  //     y: 50,
+  //     opacity: 0,
+  //     duration: 1,
+  //     stagger: 0.3,
+  //     scrollTrigger: {
+  //       trigger: containerRef.current,
+  //       start: "top 95%",
+  //       end: "bottom 96%",
+  //       scrub: 6,
+  //     },
+  //     ease: "power3.out",
+  //   });
+
+  //   gsap.from(aboutContent, {
+  //     opacity: 0,
+  //     x: -50,
+  //     duration: 2,
+  //     delay: 2.5,
+  //     scrollTrigger: {
+  //       trigger: containerRef.current,
+  //       start: "top center", // Adjust as needed
+  //       end: "bottom center", // Adjust as needed
+  //       scrub: 6, // Smoothly updates the animation as you scroll
+  //     },
+  //     ease: "power3.out",
+  //   });
+
+  //   gsap.from(aboutContent2.children, {
+  //     opacity: 0,
+  //     y: 30,
+  //     duration: 1,
+  //     scrollTrigger: {
+  //       trigger: containerRef.current,
+  //       start: "top center", // Adjust as needed
+  //       end: "bottom center", // Adjust as needed
+  //       scrub: 1, // Smoothly updates the animation as you scroll
+  //     },
+  //     stagger: 0.2,
+  //     ease: "power3.out",
+  //   });
+
+  //   // Animate the "22" with a delay after other animations
+  //   // gsap.to(experienceNumber, {
+  //   //   opacity: 1,
+  //   //   y: 0,
+  //   //   duration: 1,
+  //   //   delay: 2, // Adjust the delay as needed
+  //   //   ease: "power3.out",
+  //   // });
+
+  //   // Scroll-triggered animation for the "22" element
+  //   gsap.to(experienceNumber, {
+  //     opacity: 1,
+  //     y: 0,
+  //     duration: 1,
+  //     scrollTrigger: {
+  //       trigger: containerRef.current,
+  //       start: "top center", // Adjust as needed
+  //       end: "bottom center", // Adjust as needed
+  //       scrub: 1, // Smoothly updates the animation as you scroll
+  //     },
+  //     ease: "power3.out",
+  //   });
+  // });

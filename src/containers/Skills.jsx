@@ -113,22 +113,7 @@ function Skills() {
   ];
 
   const SkillProgress = ({ title, value }) => {
-    useEffect(() => {
-      const formattedTitle = title.replace(/\s+/g, "_"); // Replace spaces with underscores
-      const tl = gsap.timeline({
-        defaults: { ease: "power3.out" },
-        scrollTrigger: {
-          trigger: `.modal-content progress-bar-${formattedTitle}`,
-          start: "top 80%", // Adjust this value according to your preference
-        },
-      });
 
-      tl.fromTo(
-        `.progress-bar-${formattedTitle} `,
-        { width: "0%" },
-        { width: `${value}%`, duration: 3 }
-      );
-    }, [title, value]);
 
     return (
       <div className="relative overflow-hidden">
@@ -255,6 +240,29 @@ function Skills() {
 }
 
 export default Skills;
+
+
+    // useEffect(() => {
+    //   const formattedTitle = title.replace(/\s+/g, "_"); // Replace spaces with underscores
+    //   const tl = gsap.timeline({
+    //     defaults: { ease: "power3.out" },
+    //     scrollTrigger: {
+    //       trigger: `.modal-content progress-bar-${formattedTitle}`,
+    //       start: "top 80%", // Adjust this value according to your preference
+    //     },
+    //   });
+
+    //   tl.fromTo(
+    //     `.progress-bar-${formattedTitle} `,
+    //     { width: "0%" },
+    //     { width: `${value}%`, duration: 3 }
+    //   );
+    // }, [title, value]);
+
+
+
+
+
 
 // import React, {useState, useEffect } from "react";
 // import { PrimaryHeading, SecondaryHeading } from "../components/Text";
