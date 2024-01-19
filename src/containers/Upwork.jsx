@@ -13,27 +13,27 @@ export default function Upwork() {
       description: "Description 1",
     },
     {
-      image: require("../assets/images/upwork/feedback.png"),
+      image: require("../assets/images/upwork/feedback2.png"),
       title: "Card 2",
       description: "Description 2",
     },
     {
-      image: require("../assets/images/upwork/feedback.png"),
+      image: require("../assets/images/upwork/feedback3.png"),
       title: "Card 3",
       description: "Description 3",
     },
     {
-      image: require("../assets/images/upwork/feedback.png"),
+      image: require("../assets/images/upwork/feedback4.png"),
       title: "Card 1",
       description: "Description 1",
     },
     {
-      image: require("../assets/images/upwork/feedback.png"),
+      image: require("../assets/images/upwork/feedback5.png"),
       title: "Card 2",
       description: "Description 2",
     },
     {
-      image: require("../assets/images/upwork/feedback.png"),
+      image: require("../assets/images/upwork/feedback6.png"),
       title: "Card 3",
       description: "Description 3",
     },
