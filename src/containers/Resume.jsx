@@ -374,13 +374,13 @@ const Resume = () => {
                 {educationData
                   .slice(0, showAllEntries ? educationData.length : 4)
                   .map((education, index) => (
-                    <div key={index} className="mb-4 border-b pb-6 education-entry">
+                    <div key={index} className="flex justify-between mb-4 border-b pb-6 education-entry">
                       <div>
                       <SecondaryText title={education.title} style={"font-semibold"} />
                       <SecondaryText style={"lg:text-lg py-2"} title={`${education.institution}`} />
                       <PrimaryText title={education.description} className="w-[100%]" />
                       </div>
-                      <img src={education.image} alt={`Education ${index + 1}`} className="pt-4 w-[100px] object-cover" />
+                      <img src={education.image} alt={`Education ${index + 1}`} className="mt-4 w-[50px] rounded-full h-[50px] object-cover" />
                     </div>
                   ))
                 }
@@ -396,11 +396,13 @@ const Resume = () => {
                 {experienceData
                   .slice(0, showAllEntries ? experienceData.length : 4)
                   .map((experience, index) => (
-                    <div key={index} className="mb-4 border-b pb-6 experience-entry">
+                    <div key={index} className="mb-4 border-b flex justify-between pb-6 experience-entry">
+                      <div>
                       <SecondaryText title={experience.title} style={"font-semibold"} />
                       <SecondaryText style={"lg:text-lg py-2"} title={`${experience.company} / ${experience.duration}`} />
                       <PrimaryText title={experience.description} />
-                      <img src={experience.image} alt={`Experience ${index + 1}`} className="w-[100px] object-cover pt-4" />
+                      </div>
+                      <img src={experience.image} alt={`Experience ${index + 1}`} className="w-[50px] ml-4 h-[50px] rounded-full object-cover mt-4" />
                     </div>
                   ))
                 }

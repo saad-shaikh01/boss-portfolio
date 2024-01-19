@@ -146,11 +146,7 @@ function Skills() {
           />
         </div>
         <div
-          className={`progress-section progress-bar-${title.replace(
-            /\s+/g,
-            "_"
-          )}`}
-        >
+          className="progress-section  w-[100%]">
           <progress
             value={value}
             max="100"

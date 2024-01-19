@@ -215,37 +215,6 @@ const projects = [
 
 ];
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 const categories = ["All", "Apps", "Websites",];
 
 const Works = () => {
@@ -341,7 +310,7 @@ const Works = () => {
             .map((project, index) => (
               <div
                 key={index}
-                className="w-[100%] h-[160px] md:w-[30%] my-2 sm:m-4 relative cursor-pointer project-card"
+                className="w-[100%] md:w-[30%] my-2 sm:m-4 relative cursor-pointer project-card"
                 onClick={() => handleProjectClick(project)}
               >
                 <img
@@ -349,9 +318,9 @@ const Works = () => {
                   alt={project.title}
                   className="h-[100%] w-[100%] object-cover border-2 rounded-md border-dark-primary"
                 />
-                <div className="absolute inset-0 flex flex-col items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300 bg-black bg-opacity-70 text-white text-center">
-                  <p className="font-bold text-2xl">{project.title}</p>
-                  <p className="px-4 leading-5 pt-1">{project.description}</p>
+                <div className="hidden lg:flex absolute inset-0 flex flex-col items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300 bg-black bg-opacity-70 text-white text-center">
+                  <p className="hidden lg:block font-bold text-lg lg:text-2xl">{project.title}</p>
+                  <p className="hidden lg:block px-4 leading-4 lg:leading-5 pt-1">{project.description}</p>
                 </div>
               </div>
             ))}
@@ -372,7 +341,7 @@ const Works = () => {
               <img
                 src={selectedProject.image}
                 alt={selectedProject.title}
-                className="w-[60%] h-[300px] position-start object-cover"
+                className="w-[60%] hidden xl:block h-[300px] position-start object-cover"
               />
               <div>
                 <p className="font-bold text-2xl pb-4">{selectedProject.title}</p>

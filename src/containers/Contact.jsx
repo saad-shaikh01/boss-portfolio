@@ -91,8 +91,8 @@ function Contact() {
                     <div className='contact-content-sociallinks flex gap-8 mt-16'>
                         <FontAwesomeIcon icon={Icons.Twitter} className='ease-in-out duration-500 hover:-translate-y-2 cursor-pointer text-black text-2xl' />
                         <FontAwesomeIcon icon={Icons.Facebook} className='ease-in-out duration-500 hover:-translate-y-2 cursor-pointer text-black text-2xl' />
-                        <FontAwesomeIcon icon={Icons.LinkedIn} className='ease-in-out duration-500 hover:-translate-y-2 cursor-pointer text-black text-2xl' />
-                        
+                        <a target="blank" href="https://www.linkedin.com/in/muhammad-ahsan-a-9927b4a9/"><FontAwesomeIcon icon={Icons.LinkedIn} className='ease-in-out duration-500 hover:-translate-y-2 cursor-pointer text-black text-2xl' />
+                        </a>
                     </div>
 
                 </div>
