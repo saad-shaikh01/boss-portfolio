@@ -234,7 +234,7 @@ const Navbar = () => {
   const socialLinks = [
     ["Twitter", "https://twitter.com/example"],
     ["Facebook", "https://github.com/example"],
-    ["LinkedIn", "https://www.linkedin.com/in/example"],
+    ["LinkedIn", "https://www.linkedin.com/in/muhammad-ahsan-a-9927b4a9/"],
     ["Instagram", "https://github.com/example"],
     ["GitHub", "https://github.com/example"],
   ];
@@ -281,6 +281,7 @@ const Navbar = () => {
           <div className="flex justify-center ">
             {socialLinks.map(([title, url]) => (
               <a
+              target="blank"
                 key={title}
                 href={url}
                 className="duration-500 ease-in-out hover:-translate-y-1 hover:text-gray-400   p-[8px] text-[20px]"
