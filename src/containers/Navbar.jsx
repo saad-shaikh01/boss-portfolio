@@ -289,8 +289,6 @@ const Navbar = () => {
                   icon={
                     title === "Twitter"
                       ? faTwitter
-                      : title === "Instagram"
-                      ? faInstagram
                       : title === "LinkedIn"
                       ? faLinkedin
                       : title === "Facebook"
