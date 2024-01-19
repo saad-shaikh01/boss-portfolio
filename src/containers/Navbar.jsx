@@ -162,11 +162,6 @@
 
 // export default Navbar;
 
-
-
-
-
-
 import React, { useState, useEffect, useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -191,29 +186,32 @@ const Navbar = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY + window.innerHeight / 2;
-    
+
       links.forEach(([title, url]) => {
         let targetElement;
-    
+
         if (url === "/") {
           targetElement = document.querySelector("body");
         } else {
           targetElement = document.querySelector(url);
         }
-    
+
         if (targetElement) {
           const elementTop = targetElement.offsetTop;
           const elementBottom = elementTop + targetElement.offsetHeight;
-    
+
           if (scrollPosition >= elementTop && scrollPosition <= elementBottom) {
             setActiveLink(title);
           }
         }
       });
-    
+
       // Check if the current section is not in the links array
       const currentSection = currentPath.split("#")[1];
-      if (currentSection && !links.some(([, url]) => `#${currentSection}` === url)) {
+      if (
+        currentSection &&
+        !links.some(([, url]) => `#${currentSection}` === url)
+      ) {
         setActiveLink(currentSection);
       }
     };
@@ -266,7 +264,9 @@ const Navbar = () => {
                 key={title}
                 href={url}
                 className={`block mt-4 font-semibold lg:inline-block lg:text-[15px] ${
-                  title === activeLink ? "text-black bg-dark-primary px-2  text-white" : ""
+                  title === activeLink
+                    ? "text-black bg-dark-primary px-2  text-white"
+                    : ""
                 } lg:mt-0  mr-4 xl:mr-8`}
                 onClick={() => setActiveLink(title)}
               >
@@ -323,7 +323,15 @@ const Navbar = () => {
       >
         <div id="sidebar" className=" text-center  p-">
           {links.map(([title, url]) => (
-            <a key={title} href={url} className=" block mt-4 font-semibold">
+            <a
+              key={title}
+              href={url}
+              className=" block mt-4 font-semibold"
+              onClick={() => {
+                setShowSidebar(false); // Hide the sidebar when a link is clicked
+                setActiveLink(title); // Optionally, update the active link state
+              }}
+            >
               {title}
             </a>
           ))}

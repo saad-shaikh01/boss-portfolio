@@ -37,6 +37,121 @@ export default function Upwork() {
       title: "Card 3",
       description: "Description 3",
     },
+    {
+      image: require("../assets/images/upwork/feedback6.png"),
+      title: "Card 3",
+      description: "Description 3",
+    },
+    {
+      image: require("../assets/images/upwork/feedback7.png"),
+      title: "Card 3",
+      description: "Description 3",
+    },
+    {
+      image: require("../assets/images/upwork/feedback8.png"),
+      title: "Card 3",
+      description: "Description 3",
+    },
+    {
+      image: require("../assets/images/upwork/feedback9.png"),
+      title: "Card 3",
+      description: "Description 3",
+    },
+    {
+      image: require("../assets/images/upwork/feedback10.png"),
+      title: "Card 3",
+      description: "Description 3",
+    },
+    {
+      image: require("../assets/images/upwork/feedback11.png"),
+      title: "Card 3",
+      description: "Description 3",
+    },
+    {
+      image: require("../assets/images/upwork/feedback12.png"),
+      title: "Card 3",
+      description: "Description 3",
+    },
+    {
+      image: require("../assets/images/upwork/feedback13.png"),
+      title: "Card 3",
+      description: "Description 3",
+    },
+    {
+      image: require("../assets/images/upwork/feedback14.png"),
+      title: "Card 3",
+      description: "Description 3",
+    },
+    {
+      image: require("../assets/images/upwork/feedback15.png"),
+      title: "Card 3",
+      description: "Description 3",
+    },
+    {
+      image: require("../assets/images/upwork/feedback16.png"),
+      title: "Card 3",
+      description: "Description 3",
+    },
+    {
+      image: require("../assets/images/upwork/feedback17.png"),
+      title: "Card 3",
+      description: "Description 3",
+    },
+    {
+      image: require("../assets/images/upwork/feedback18.png"),
+      title: "Card 3",
+      description: "Description 3",
+    },
+    {
+      image: require("../assets/images/upwork/feedback19.png"),
+      title: "Card 3",
+      description: "Description 3",
+    },
+    {
+      image: require("../assets/images/upwork/feedback20.png"),
+      title: "Card 3",
+      description: "Description 3",
+    },
+    {
+      image: require("../assets/images/upwork/feedback21.png"),
+      title: "Card 3",
+      description: "Description 3",
+    },
+    {
+      image: require("../assets/images/upwork/feedback22.png"),
+      title: "Card 3",
+      description: "Description 3",
+    },
+    {
+      image: require("../assets/images/upwork/feedback23.png"),
+      title: "Card 3",
+      description: "Description 3",
+    },
+    {
+      image: require("../assets/images/upwork/feedback24.png"),
+      title: "Card 3",
+      description: "Description 3",
+    },
+    {
+      image: require("../assets/images/upwork/feedback25.png"),
+      title: "Card 3",
+      description: "Description 3",
+    },
+    {
+      image: require("../assets/images/upwork/feedback26.png"),
+      title: "Card 3",
+      description: "Description 3",
+    },
+    {
+      image: require("../assets/images/upwork/feedback27.png"),
+      title: "Card 3",
+      description: "Description 3",
+    },
+    {
+      image: require("../assets/images/upwork/feedback28.png"),
+      title: "Card 3",
+      description: "Description 3",
+    },
   ];
 
   const settings = {
